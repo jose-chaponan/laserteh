@@ -1,0 +1,266 @@
+$color_rojo     : #DF101C
+$color_naranja  : #F68D35
+$color_gris     : #606060
+$color_blanco   : #ffffff
+
+@import fuentes
+
+$fuente_titulo: 'HelveticaNeue-bold'
+$fuente_cuerpo: 'HelveticaNeue-light'
+$fuente_media: 'HelveticaNeue-medium'
+
+body
+    font-family: $fuente_cuerpo
+    -webkit-font-smoothing: antialiased
+
+@media all and (min-width: 1px)
+    .oculta_movil
+        display: none
+    .logo_presentacion
+        background-color: $color_rojo
+        bottom: 0
+        height: 100%
+        left: 0
+        position: fixed
+        right: 0
+        transition: all ease-in-out .5s
+        top: 0
+        z-index: 99
+        img
+            width: 40%
+    
+    #preloader-overlay
+        height: 100%!important
+        margin: auto!important
+        max-width: 38%!important
+        right: 0
+        width: 100%!important
+    
+    #preloader-overlay::before
+        background: $color_rojo
+        bottom: 0
+        content: ''
+        left: 0
+        position: fixed
+        right: 0
+        top: 0
+        z-index: 0
+    
+    #preloader-logo-image
+        bottom: 45%!important
+        left: 0
+        margin: auto!important
+        max-width: 100%
+        right: 0
+    
+    #preloader-bar-progress,
+    #preloader-percent-progress
+        font-family: inherit!important
+        left: 0!important
+        margin: auto!important
+        top: 55%!important
+        right: 0!important
+        width: 100%!important
+    
+    #preloader-percent-progress
+        margin-top: 1.5vh !important
+    
+    #preloader-bar-progress
+        display: none
+
+    header
+        background-color: $color_rojo
+        left: 0
+        position: fixed
+        right: 0
+        top: 0
+        z-index: 98
+
+        section
+            width: 80%
+            padding: 2vh 0
+            .logo
+                width: 50%
+                img
+                    width: 100%
+    #home
+        background: url(../images/slide1.svg) no-repeat center center
+        background-size: 100%
+    
+    h2,
+    h3
+        width: 80%
+        text-align: center
+        font-family: $fuente_titulo
+        padding: 0
+        margin: 0
+    
+    h2
+        color: $color_rojo
+        font-size: 2rem
+        margin-top: 4vh
+
+    h3
+        color: $color_gris
+        font-size: 1.6rem
+
+    
+    .secciones
+        position: relative
+    
+    .secciones::before
+        background: url(../images/corner.svg) no-repeat top left
+        top: 0
+        left: 0
+        width: 36%
+        height: 40%
+
+    #about::after
+        background: url(../images/corner2.svg) no-repeat bottom right
+        bottom: 0
+        right: 0
+        width: 36%
+        height: 40%
+    
+    .secciones::before,
+    #about::after
+        background-size: 100%
+        content: ""
+        position: absolute
+
+
+    #about
+        article
+            width: 70%
+            figure
+                width: 45%
+                margin: 3vh 0
+                img
+                    width: 100%
+                figcaption
+                    font-family: $fuente_media
+                    text-align: center
+                    width: 100%
+                    color: $color_gris
+                    font-size: 1.2rem
+    
+    .tabs
+        margin-top: 2vh
+        width: 49%
+        li
+            width: 100%
+            border-bottom: 1px solid $color_gris
+            a
+                display: block  
+                width: 100%
+                text-align: center
+                padding: 1vh 0
+                font-size: 1.2rem
+        li:last-child
+            border-bottom: 0px
+
+    .mascota
+        width: 70%
+        margin-top: .5vh
+
+    .abajo
+        width: 100%
+        text-align: center
+        img
+            width: 7%
+            margin: 1vh 0
+
+
+@media all and (orientation: landscape)
+    #preloader-overlay
+            max-width: 14%!important
+    header
+        section
+            .logo
+                width: 20%
+    
+    .secciones::before
+        width: 20%
+        height: 40%
+    #about::after
+        width: 20%
+        height: 40%
+    
+    #about
+        article
+            figure
+                width: 26%
+
+    .tabs
+        width: 60%
+        margin-bottom: 2vh
+        li
+            width: 48%
+        li:nth-child(9)
+            border-bottom: 0px
+
+
+@media all and (min-width: 1024px)
+    .logo_presentacion
+        img
+            width: 17%
+    
+    #preloader-overlay
+        max-width: 9%!important
+    
+    header
+        section
+            width: 70%
+            .logo
+                width: 17%
+    h2
+        font-size: 4.2rem
+    h3
+        font-size: 3rem
+    
+    .secciones::before
+        width: 25%
+        height: 70%
+    #about::after
+        width: 25%
+        height: 70%
+
+    #about
+        article
+            width: 51%
+            figure
+                width: 26%
+                img
+                    width: 85%
+                    display: block
+                    margin: 2vh auto
+                figcaption
+                    font-size: 2rem
+    
+    .tabs
+        width: 77%
+        margin-top: 5vh
+        li
+            width: initial
+            border-bottom: 0px
+            position: relative
+            // width: 16.66%
+            text-align: center
+            a
+                position: relative
+                display: initial
+                width: initial
+                font-size: 1.8rem
+    
+    .body_tab
+        width: 77%
+        min-height: 53vh
+      
+    .mascota
+        width: 30%
+    .abajo
+        margin-top: 3vh
+        width: 100%
+        img
+            width: 2%
+            
