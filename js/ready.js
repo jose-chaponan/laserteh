@@ -72,7 +72,15 @@ $(document).ready(function(){
         widthSlider();
     });
 
-    
+    $(".close_tab_detalle").on("click", function () { 
+        var id      = $(this).data("id"); 
+        var idtab   = $(this).data("idtab");
+        var bodtab  = $(this).data("bodtab");
+
+        $("#"+bodtab).find("li").removeClass("active_content_tab");
+        $("#"+id).addClass("active_content_tab");
+        $("#"+idtab).find("a").removeClass("active_tab");
+    });
 
     $(".tabs").find("a").on("click", function(){
         var idtabcontent = $(this).data("idtabcontent");
