@@ -133,6 +133,21 @@ body {
     font-size: 1.6rem;
   }
 
+  h4 {
+    font-family: "HelveticaNeue-light";
+    font-size: 3rem;
+    color: #DF101C;
+    font-weight: 100;
+    margin: 0 0 1vh;
+  }
+
+  h5 {
+    font-family: "HelveticaNeue-light";
+    color: #606060;
+    margin: 0 0 1vh;
+    font-size: 1.7rem;
+  }
+
   .secciones {
     position: relative;
   }
@@ -193,6 +208,10 @@ body {
     padding: 1vh 0;
     font-size: 1.2rem;
   }
+  .tabs li .active_tab {
+    font-family: "HelveticaNeue-medium";
+    color: #DF101C;
+  }
   .tabs li:last-child {
     border-bottom: 0px;
   }
@@ -203,12 +222,86 @@ body {
   }
 
   .abajo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1vh;
     width: 100%;
     text-align: center;
+    z-index: 15;
   }
   .abajo img {
     width: 7%;
     margin: 1vh 0;
+  }
+
+  .slider {
+    width: 30vw;
+  }
+  .slider .slideimg {
+    height: 45vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+  }
+
+  .slick-list {
+    width: 100%;
+  }
+
+  .slick-dots {
+    bottom: 0;
+  }
+  .slick-dots li {
+    margin: 7px 5px;
+    width: 15px;
+    height: 15px;
+  }
+  .slick-dots li button,
+  .slick-dots li button:focus {
+    border: #DF101C 2px solid;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+  }
+  .slick-dots li button::before {
+    background-color: #ffffff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    opacity: 0;
+  }
+  .slick-dots li button:hover::before,
+  .slick-dots li button:active::before,
+  .slick-dots li button:focus::before {
+    opacity: 0;
+  }
+  .slick-dots li.slick-active {
+    background-color: #DF101C;
+    border-radius: 50%;
+  }
+  .slick-dots li.slick-active button {
+    border: #DF101C 1px solid;
+    background-color: #DF101C;
+  }
+  .slick-dots li.slick-active button:before {
+    color: #DF101C;
+    opacity: 0;
+  }
+  .slick-dots li.slick-active button:hover::before {
+    opacity: 0;
+  }
+
+  .slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
+
+  .triangulo {
+    margin-left: 2vw;
+  }
+  .triangulo li {
+    list-style-image: url("../images/triangulo.svg");
   }
 }
 @media all and (orientation: landscape) {
@@ -246,6 +339,10 @@ body {
   }
 }
 @media all and (min-width: 1024px) {
+  .oculta_movil {
+    display: block;
+  }
+
   .logo_presentacion img {
     width: 17%;
   }
@@ -270,12 +367,12 @@ body {
   }
 
   .secciones::before {
-    width: 25%;
+    width: 20%;
     height: 70%;
   }
 
   #about::after {
-    width: 25%;
+    width: 20%;
     height: 70%;
   }
 
@@ -311,13 +408,24 @@ body {
     font-size: 1.8rem;
   }
 
-  .body_tab {
-    width: 77%;
-    min-height: 53vh;
+  .content_tab {
+    width: 65%;
+    min-height: 50vh;
+    position: relative;
+  }
+  .content_tab > li {
+    padding: 5vh 0;
+    z-index: 1;
+    position: fixed;
+    opacity: 0;
+  }
+  .content_tab .active_content_tab {
+    opacity: 1;
+    position: relative;
   }
 
   .mascota {
-    width: 30%;
+    width: 48%;
   }
 
   .abajo {

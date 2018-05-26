@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Laserteh - Cadillo</title>
+    <title>Laser Tec    h - Cadillo</title>
 
     <link rel="stylesheet" href="https://bastemp.com/css/bastemp.min.css?ver=1.1.2">
-    <link rel="stylesheet" href="css/styles.min.css?ver=1.1.2">
+    <link rel="stylesheet" href="plugins/slick-1.8.0/slick/slick.css">
+    <link rel="stylesheet" href="plugins/slick-1.8.0/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/styles.min.css?ver=1.2.4">
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/lsPreloader.min.js"></script>
     <script src="https://bastemp.com/js/bastemp.min.js?ver=1.1.2"></script>
-    <script src="js/ready.min.js?ver=1.0.9"></script>
+    <script src="plugins/slick-1.8.0/slick/slick.min.js"></script>
+    <script src="js/ready.min.js?ver=1.1.3"></script>
 
 </head>
 <body class="section_top_center">
@@ -59,47 +62,205 @@
             </figure>
         </article>
     </section>
+    
     <section id="promocionales" class="w_100 section_middle_center secciones">
         <h2>Corte · Grabado · Marcado</h2>
         <h3>Artículos promocionales</h3>
-        <ul class="tabs section_middle_justify">
-            <li><a data-idtab="merchandising">Merchandising</a></li>
+        <ul id="tab1" class="tabs section_middle_justify">
+            <li><a data-tab="tab1" data-idtabcontent="bodytab1" data-idtab="merchandising">Merchandising</a></li>
             <li class="oculta_movil">|</li>
-            <li><a data-idtab="punto_venta">Punto de Venta</a></li>
+            <li><a data-tab="tab1" data-idtabcontent="bodytab1" data-idtab="punto_venta">Punto de Venta</a></li>
             <li class="oculta_movil">|</li>
-            <li><a data-idtab="reconocimiento">Reconocimiento</a></li>
+            <li><a data-tab="tab1" data-idtabcontent="bodytab1" data-idtab="reconocimiento">Reconocimiento</a></li>
             <li class="oculta_movil">|</li>
-            <li><a data-idtab="impresion_digital">Impresión Digital</a></li>
+            <li><a data-tab="tab1" data-idtabcontent="bodytab1" data-idtab="impresion_digital">Impresión Digital</a></li>
             <li class="oculta_movil">|</li>
-            <li><a data-idtab="senialetica">Señalética</a></li>
+            <li><a data-tab="tab1" data-idtabcontent="bodytab1" data-idtab="senialetica">Señalética</a></li>
             <li class="oculta_movil">|</li>
-            <li><a data-idtab="branding_natural">Branding Natural</a></li>
+            <li><a data-tab="tab1" data-idtabcontent="bodytab1" data-idtab="branding_natural">Branding Natural</a></li>
         </ul>
-        <article id="default1" class="body_tab section_middle_center">
-            <img src="images/elefante-origami.svg" alt="Promocionales" class="mascota">
-        </article>
+        <ul id="bodytab1" class="content_tab section_middle_center">
+            <li id="default1" class="section_middle_center w_100 active_content_tab">
+                <img src="images/elefante-origami.svg" alt="Promocionales" class="mascota">
+            </li>
+            <li id="merchandising" class="w_100 section_top_justify">
+                <section class="w_55">
+                    <h4>Merchandising</h4>
+                    <ul class="triangulo">
+                        <li>Lapiceros</li>
+                        <li>Estuches de bolígrafo</li>
+                        <li>Memorias USB</li>
+                        <li>Billeteras</li>
+                        <li>Llaveros</li>
+                        <li>Vasos</li>
+                        <li>Tazas</li>
+                        <li>Botellas</li>
+                        <li>Copas</li>
+                        <li>Jarras</li>
+                        <li>Cajas</li>
+                        <li>Dispositivos electrónicos</li>
+                        <li>Placas de reconocimiento</li>
+                    </ul>
+                </section>
+                <section class="w_45">
+                    <section class="section_middle_left slider w_100">
+                        <div data-imagen="images/merchadising/1.png" class="slideimg"></div>
+                        <div data-imagen="images/merchadising/2.png" class="slideimg"></div>
+                        <div data-imagen="images/merchadising/3.png" class="slideimg"></div>
+                        <div data-imagen="images/merchadising/LapicerosRojos.png" class="slideimg"></div>
+                        <div data-imagen="images/merchadising/lata-tinta.png" class="slideimg"></div>
+                        <div data-imagen="images/merchadising/llavero.png" class="slideimg"></div>
+                        <div data-imagen="images/merchadising/pluma.png" class="slideimg"></div>
+                        <div data-imagen="images/merchadising/PRINCIPAL.png" class="slideimg"></div>
+                    </section>
+                </section>
+            </li>
+            <li id="punto_venta" class="w_100 section_top_justify">
+                <section class="w_55">
+                    <h4>Punto de Venta</h4>
+                    <ul class="triangulo">
+                        <li>Porta folletos</li>
+                        <li>Exhibidores</li>
+                        <li>Mobiliario para tiendas</li>
+                    </ul>
+                </section>
+                <section class="w_45">
+                    <section class="section_middle_left slider w_100">
+                        <div data-imagen="images/punto_venta/1.png" class="slideimg"></div>
+                        <div data-imagen="images/punto_venta/2.png" class="slideimg"></div>
+                        <div data-imagen="images/punto_venta/3.png" class="slideimg"></div>
+                        <div data-imagen="images/punto_venta/4.png" class="slideimg"></div>
+                        <div data-imagen="images/punto_venta/5.png" class="slideimg"></div>
+                    </section>
+                </section>
+            </li>
+            <li id="reconocimiento" class="w_100 section_top_justify">
+                <section class="w_55">
+                    <h4>Reconocimiento</h4>
+                    <ul class="triangulo">
+                        <li>Trofeos</li>
+                        <li>Platos</li>
+                        <li>Copas</li>
+                        <li>Grabar y fabricar premios</li>
+                        <li>Grabar y personalizar reconocimientos</li>
+                        <li>Medallas</li>
+                        <li>Personalización o fabricación de trofeos deportivos</li>
+                        <li>Placas honoríficas</li>
+                        <li>Distintivos de empresa</li>
+                        <li>Placas de reconocimiento</li>
+                        <li>Letreros conmemorativos</li>
+                        <li>Rótulos</li>
+                        <li>Llaveros</li>
+                    </ul>
+                </section>
+                <section class="w_45">
+                    <section class="section_middle_left slider w_100">
+                        <div data-imagen="images/reconocimiento/trofeo.png" class="slideimg"></div>
+                        <div data-imagen="images/reconocimiento/trofeo-2.png" class="slideimg"></div>
+                        <div data-imagen="images/reconocimiento/trofeos.png" class="slideimg"></div>
+                    </section>
+                </section>
+            </li>
+            <li id="impresion_digital" class="w_100 section_top_justify">
+                <section class="w_55">
+                    <h4>Impresión Digital</h4>
+                    <ul class="triangulo">
+                        <li>Folletos</li>
+                        <li>Packaging</li>
+                        <li>Tarjetas de vista</li>
+                        <li>Tarjetas de felicitación</li>
+                        <li>Invitaciones</li>
+                        <li>Agendas personalizadas</li>
+                        <li>Cajas</li>
+                        <li>Portadas de libros</li>
+                        <li>Mobiliario de cartón</li>
+                        <li>Madera</li>
+                        <li>Maniquíes</li>
+                    </ul>
+                </section>
+                <section class="w_45">
+                    <section class="section_middle_left slider w_100">
+                        <div data-imagen="images/impresion_digital/principal.png" class="slideimg"></div>
+                        <div data-imagen="images/impresion_digital/papel-carton.png" class="slideimg"></div>
+                        <div data-imagen="images/impresion_digital/1.png" class="slideimg"></div>
+                        <div data-imagen="images/impresion_digital/2.png" class="slideimg"></div>
+                    </section>
+                </section>
+            </li>
+            <li id="senialetica" class="w_100 section_top_justify">
+                <section class="w_55">
+                    <h4>Señalética</h4>
+                    <ul class="triangulo">
+                        <li>Señales para interiores y exteriores</li>
+                        <li>Placas de identidad</li>
+                        <li>Marcado de trofeos</li>
+                        <li>Señales de seguridad</li>
+                        <li>Señalización</li>
+                        <li>Carteles publicitarios</li>
+                        <li>Rótulos funcionales</li>
+                        <li>Rótulos decorativos</li>
+                        <li>Paneles de control (paneles eléctricos,<br>cuadros de mandos)</li>
+                        <li>Grabado industrial, placas de identificación</li>
+                    </ul>
+                </section>
+                <section class="w_45">
+                    <section class="section_middle_left slider w_100">
+                        <div data-imagen="images/senialetica/1.png" class="slideimg"></div>
+                        <div data-imagen="images/senialetica/2.png" class="slideimg"></div>
+                        <div data-imagen="images/senialetica/3.png" class="slideimg"></div>
+                    </section>
+                </section>
+            </li>
+            <li id="branding_natural" class="w_100 section_top_justify">
+                <section class="w_55">
+                    <h4>Branding Natural</h4>
+                    <h5>Alimentos aptos para el marcado láser:</h5>
+                    <ul class="triangulo">
+                        <li>Frutas como manzanas, plátanos, piñas, etc.</li>
+                        <li>Verduras como pepinos, calabazas, patatas, etc.</li>
+                        <li>Productos horneados (pan)</li>
+                        <li>Carnes y embutidos</li>
+                        <li>Otros tipos de alimentos</li>
+                    </ul>
+                </section>
+                <section class="w_45">
+                    <section class="section_middle_left slider w_100">
+                        <div data-imagen="images/branding_natural/calabaza.png" class="slideimg"></div>
+                        <div data-imagen="images/branding_natural/coc.png" class="slideimg"></div>
+                        <div data-imagen="images/branding_natural/huevos-pascua.png" class="slideimg"></div>
+                        <div data-imagen="images/branding_natural/jabon.png" class="slideimg"></div>
+                        <div data-imagen="images/branding_natural/manzanas.png" class="slideimg"></div>
+                        <div data-imagen="images/branding_natural/pan.png" class="slideimg"></div>
+                        <div data-imagen="images/branding_natural/pepino.png" class="slideimg"></div>
+                        <div data-imagen="images/branding_natural/principal.png" class="slideimg"></div>
+                    </section>
+                </section>
+            </li>
+        </ul>
         <a href="#materiales" class="ancla abajo"> <img src="images/flecha-abajo.svg" alt=""> </a>
     </section>
 
     <section id="materiales" class="w_100 section_middle_center secciones">
         <h2>Corte · Grabado · Marcado</h2>
         <h3>Materiales diversos</h3>
-        <ul class="tabs section_middle_justify">
-            <li><a data-idtab="merchandising">Madera</a></li>
+        <ul id="tab2" class="tabs section_middle_justify">
+            <li><a  data-tab="tab2" data-idtabcontent="bodytab2" data-idtab="madera">Madera</a></li>
             <li class="oculta_movil">|</li>
-            <li><a data-idtab="punto_venta">Acrílico</a></li>
+            <li><a  data-tab="tab2" data-idtabcontent="bodytab2" data-idtab="acrilico">Acrílico</a></li>
             <li class="oculta_movil">|</li>
-            <li><a data-idtab="reconocimiento">Vidrio</a></li>
+            <li><a  data-tab="tab2" data-idtabcontent="bodytab2" data-idtab="vidrio">Vidrio</a></li>
             <li class="oculta_movil">|</li>
-            <li><a data-idtab="impresion_digital">Metal</a></li>
+            <li><a  data-tab="tab2" data-idtabcontent="bodytab2" data-idtab="metal">Metal</a></li>
             <li class="oculta_movil">|</li>
-            <li><a data-idtab="senialetica">Cuero</a></li>
+            <li><a  data-tab="tab2" data-idtabcontent="bodytab2" data-idtab="cuero">Cuero</a></li>
             <li class="oculta_movil">|</li>
-            <li><a data-idtab="branding_natural">Papel y Cartón</a></li>
+            <li><a  data-tab="tab2" data-idtabcontent="bodytab2" data-idtab="papel-carton">Papel y Cartón</a></li>
         </ul>
-        <article id="default1" class="body_tab section_middle_center">
-            <img src="images/perro-origami.svg" alt="Promocionales" class="mascota">
-        </article>
+        <ul id="bodytab2" class="content_tab section_middle_center">
+            <li id="default2" class="section_middle_center w_100 active_content_tab">
+                <img src="images/perro-origami.svg" alt="Promocionales" class="mascota">
+            </li>
+        </ul>
     </section>
 
 </body>

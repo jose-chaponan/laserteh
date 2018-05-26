@@ -28,6 +28,15 @@ function slider_section(){
         });
 }
 
+function widthSlider(){
+    $(".slider").find(".slideimg").each(function(){
+        var imagen = $(this).data("imagen");
+        $(this).css({
+            "background-image": "url("+imagen+")"
+        });
+    });
+}
+
 $(document).ready(function(){
     $("body").lsPreloader({
         backgroundColor: "#DF101C",
@@ -41,10 +50,39 @@ $(document).ready(function(){
         },
         onComplete: function () {
             oculta_logo_presentacion();
+            $('.slider').slick({
+                arrows: false,
+                dots: true,
+                infinite: true,
+                speed: 1000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                fade: true,
+                adaptiveHeight: true,
+                cssEase: 'linear'
+            });
         }
     });
     slider_section();
+    widthSlider();
     $(window).resize(function() {
         slider_section();
+        widthSlider();
+    });
+
+    
+
+    $(".tabs").find("a").on("click", function(){
+        var idtabcontent = $(this).data("idtabcontent");
+        var idtab = $(this).data("idtab");
+        var tab = $(this).data("tab");
+
+        $("#"+tab).find("a").removeClass("active_tab");
+        $(this).addClass("active_tab");
+
+        $("#" + idtabcontent).find("li").removeClass("active_content_tab");
+        $("#" + idtab).addClass("active_content_tab");
     });
 });

@@ -103,6 +103,18 @@ body
     h3
         color: $color_gris
         font-size: 1.6rem
+    
+    h4
+        font-family: $fuente_cuerpo
+        font-size: 3rem
+        color: $color_rojo
+        font-weight: 100
+        margin: 0 0 1vh
+    h5
+        font-family: $fuente_cuerpo
+        color: $color_gris
+        margin: 0 0 1vh
+        font-size: 1.7rem
 
     
     .secciones
@@ -156,6 +168,9 @@ body
                 text-align: center
                 padding: 1vh 0
                 font-size: 1.2rem
+            .active_tab
+                font-family: $fuente_media
+                color: $color_rojo
         li:last-child
             border-bottom: 0px
 
@@ -164,11 +179,69 @@ body
         margin-top: .5vh
 
     .abajo
+        position: absolute
+        left: 0
+        right: 0
+        bottom: 1vh
         width: 100%
         text-align: center
+        z-index: 15
         img
             width: 7%
             margin: 1vh 0
+    .slider
+        width: 30vw
+        .slideimg
+            height: 45vh
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: auto 100%
+    
+    .slick-list
+        width: 100%
+    .slick-dots
+        bottom: 0
+        li
+            // display: block
+            margin: 7px 5px
+            width: 15px
+            height: 15px
+            button,
+            button:focus
+                border: $color_rojo 2px solid
+                background-color: rgba($color_blanco, 0)
+                border-radius: 50%
+                width: 15px
+                height: 15px
+            button::before
+                background-color: $color_blanco
+                width: 15px
+                height: 15px
+                border-radius: 50%
+                opacity: 0
+            button:hover::before,
+            button:active::before,
+            button:focus::before
+                opacity: 0
+        li.slick-active
+            background-color: $color_rojo
+            border-radius: 50%
+            button
+                border: $color_rojo 1px solid
+                background-color: $color_rojo
+            button:before
+                color: $color_rojo
+                opacity: 0
+            button:hover::before
+                opacity: 0
+
+    .slick-dotted.slick-slider
+        margin-bottom: 0
+
+    .triangulo
+        margin-left: 2vw
+        li
+            list-style-image: url("../images/triangulo.svg")
 
 
 @media all and (orientation: landscape)
@@ -199,8 +272,21 @@ body
         li:nth-child(9)
             border-bottom: 0px
 
+    // .slick-track
+    //     width: 100%!important
+    // .slider
+    //     .slideimg
+    //         height: 40vh
+    //         background-position: center
+    //         background-repeat: no-repeat
+    //         background-size: 90%
+    //         width: 100%!important
+
 
 @media all and (min-width: 1024px)
+    .oculta_movil
+        display: block
+        
     .logo_presentacion
         img
             width: 17%
@@ -219,10 +305,10 @@ body
         font-size: 3rem
     
     .secciones::before
-        width: 25%
+        width: 20%
         height: 70%
     #about::after
-        width: 25%
+        width: 20%
         height: 70%
 
     #about
@@ -252,15 +338,24 @@ body
                 width: initial
                 font-size: 1.8rem
     
-    .body_tab
-        width: 77%
-        min-height: 53vh
+    .content_tab
+        width: 65%
+        min-height: 50vh
+        position: relative
+        >li
+            padding: 5vh 0
+            z-index: 1
+            position: fixed
+            opacity: 0
+        .active_content_tab
+            opacity: 1
+            position: relative 
       
     .mascota
-        width: 30%
+        width: 48%
     .abajo
         margin-top: 3vh
         width: 100%
         img
             width: 2%
-            
+    
