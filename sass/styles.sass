@@ -175,7 +175,7 @@ body
             border-bottom: 0px
 
     .mascota
-        width: 70%
+        width: 63%
         margin-top: .5vh
 
     .abajo
@@ -185,14 +185,14 @@ body
         bottom: 1vh
         width: 100%
         text-align: center
-        z-index: 15
         img
             width: 7%
             margin: 1vh 0
     .slider
-        width: 30vw
+        width: 80vw
+        margin-top: 2vh
         .slideimg
-            height: 45vh
+            height: 30vh
             background-repeat: no-repeat
             background-position: center center
             background-size: auto 100%
@@ -238,11 +238,66 @@ body
     .slick-dotted.slick-slider
         margin-bottom: 0
 
-    .triangulo
-        margin-left: 2vw
-        li
-            list-style-image: url("../images/triangulo.svg")
+    
+    .content_tab
+        width: 65%
+        min-height: 1vh
+        position: relative
+        >li
+            background-color: $color_blanco
+            padding: 5vh 0
+            position: fixed
+            opacity: 0
+        .active_content_tab
+            opacity: 1
+            position: relative
+            // z-index: 50
 
+            .wrapp_cont
+                background-color: $color_blanco
+                position: fixed
+                top: 0
+                bottom: 0
+                right: 0
+                left: 0
+                padding-top: 17vh
+                z-index: 80
+
+                >section
+                    width: 80%!important
+
+                    h4
+                        font-size: 2.3rem
+                    h5
+                        font-size: 1.3rem
+                    .triangulo
+                        margin-left: 3vw
+                        li
+                            list-style-image: url("../images/triangulo.svg")
+                            font-size: 1.18rem
+                >.w_45
+                    position: absolute
+                    bottom: 3vh
+                    left: 0
+                    right: 0
+                    margin: auto
+
+                .close_tab_detalle
+                    position: absolute
+                    top: 17vh
+                    right: 10vw
+                    z-index: 81
+                    img
+                        width: 10vw
+                        height: auto
+    
+
+    footer
+        background-color: $color_rojo
+        font-family: $fuente_media
+        color: $color_blanco
+        font-size: 1.5rem
+        padding: 2vh 0
 
 @media all and (orientation: landscape)
     #preloader-overlay
@@ -271,16 +326,29 @@ body
             width: 48%
         li:nth-child(9)
             border-bottom: 0px
-
-    // .slick-track
-    //     width: 100%!important
-    // .slider
-    //     .slideimg
-    //         height: 40vh
-    //         background-position: center
-    //         background-repeat: no-repeat
-    //         background-size: 90%
-    //         width: 100%!important
+    
+    .content_tab
+        .active_content_tab
+            .wrapp_cont
+                padding-top: 20vh
+                >section:first-child
+                    width: 40%!important
+                >.w_45
+                    width: 50%!important
+                    position: relative
+                    bottom: 0
+                    margin: 0
+                .close_tab_detalle
+                    right: 3vw 
+                    img
+                        width: 5vw
+    .slider
+        width: 45vw
+        .slideimg
+            height: 70vh
+    
+    .mascota
+        width: 50%
 
 
 @media all and (min-width: 1024px)
@@ -303,6 +371,7 @@ body
         font-size: 4.2rem
     h3
         font-size: 3rem
+    
     
     .secciones::before
         width: 20%
@@ -336,27 +405,6 @@ body
                 display: initial
                 width: initial
                 font-size: 1.8rem
-    
-    .content_tab
-        width: 65%
-        min-height: 50vh
-        position: relative
-        >li
-            padding: 5vh 0
-            z-index: 1
-            position: fixed
-            opacity: 0
-        .active_content_tab
-            opacity: 1
-            position: relative 
-        .close_tab_detalle
-            position: absolute
-            top: 2vh
-            right: -5vw
-            z-index: 50
-            img
-                width: 3vw
-                height: auto
       
     .mascota
         width: 48%
@@ -365,4 +413,44 @@ body
         width: 100%
         img
             width: 2%
+    
+    .content_tab
+        width: 65%
+        min-height: 50vh
+        .active_content_tab
+            opacity: 1
+            position: relative
+            .wrapp_cont
+                position: relative
+                padding-top: 0
+                z-index: 80
+                >section:first-child
+                    width: 55%!important
+                >.w_45
+                    width: 45%!important
+
+                .close_tab_detalle
+                    position: absolute
+                    top: 2vh
+                    right: -5vw
+                    img
+                        width: 3vw
+                >section
+                    h4
+                        font-size: 3rem
+                    h5
+                        font-size: 1.7rem
+                    .triangulo
+                        margin-left: 2vw
+                        li
+                            font-size: 1.7rem
+
+    .slider
+        width: 30vw
+        .slideimg
+            height: 45vh
+    
+    
+    footer
+        font-size: 3.5rem
     
