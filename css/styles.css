@@ -28,6 +28,10 @@ body {
     display: none;
   }
 
+  .oculta_escritorio {
+    display: block;
+  }
+
   .logo_presentacion {
     background-color: #DF101C;
     bottom: 0;
@@ -38,7 +42,7 @@ body {
     -webkit-transition: all ease-in-out 0.5s;
     transition: all ease-in-out 0.5s;
     top: 0;
-    z-index: 99;
+    z-index: 99999;
   }
   .logo_presentacion img {
     width: 40%;
@@ -95,22 +99,173 @@ body {
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 98;
+    z-index: 99998;
+    height: 13vh;
   }
   header section {
     width: 80%;
-    padding: 2vh 0;
+    padding: 3vh 0;
   }
   header section .logo {
-    width: 50%;
+    width: 44%;
   }
   header section .logo img {
     width: 100%;
+    display: block;
+    margin: 0;
+  }
+
+  nav {
+    background-color: #F68D35;
+    min-height: 87vh;
+    position: fixed;
+    top: 13vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+  }
+  nav ul {
+    width: 80%;
+  }
+  nav ul li {
+    width: 100%;
+    position: relative;
+  }
+  nav ul li a {
+    color: #ffffff;
+  }
+  nav ul li a svg {
+    height: 20vh;
+    width: auto;
+    display: block;
+    margin: auto;
+  }
+  nav ul li a span {
+    font-family: "HelveticaNeue-medium";
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  nav ul li a .st0 {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+  }
+  nav ul li a .st1 {
+    fill: #F68D35;
+    stroke: #ffffff;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+  }
+  nav ul li ul {
+    position: absolute;
+    bottom: 0;
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+    opacity: 0;
+    padding-top: 3%;
+  }
+  nav ul li ul li a {
+    font-family: "HelveticaNeue-medium";
+    padding: 0.27vh 0;
+  }
+  nav ul li:hover > a {
+    color: #DF101C;
+  }
+  nav ul li:hover > a .st0,
+  nav ul li:hover > a .st1 {
+    stroke: #DF101C;
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+  }
+  nav ul li:hover ul {
+    position: relative;
+    bottom: 0;
+    opacity: 1;
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+  }
+
+  .active_nav {
+    z-index: 97;
+    opacity: 1;
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
   }
 
   #home {
-    background: url(../images/slide1.svg) no-repeat center center;
+    padding-top: 13vh;
+  }
+  #home .slider_home .slideimghome {
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: 100%;
+    min-height: 87vh;
+  }
+  #home .slick-dots {
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: initial;
+    width: 3vw;
+    margin: auto;
+    position: absolute;
+    height: 22vh;
+  }
+  #home .slick-dots li {
+    display: block;
+    margin: 1vw 0.09vw;
+    width: 1vw;
+    height: 1vw;
+  }
+  #home .slick-dots li button,
+  #home .slick-dots li button:focus {
+    border: #DF101C 2px solid;
+    background-color: rgba(223, 16, 28, 0);
+    border-radius: 50%;
+    width: 1vw;
+    height: 1vw;
+  }
+  #home .slick-dots li button::before {
+    background-color: #DF101C;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    opacity: 0;
+  }
+  #home .slick-dots li button:hover::before,
+  #home .slick-dots li button:active::before,
+  #home .slick-dots li button:focus::before {
+    opacity: 0;
+  }
+  #home .slick-dots li.slick-active {
+    background-color: #DF101C;
+    border-radius: 50%;
+  }
+  #home .slick-dots li.slick-active button {
+    border: #DF101C 1px solid;
+    background-color: #DF101C;
+  }
+  #home .slick-dots li.slick-active button:before {
+    color: #DF101C;
+    opacity: 0;
+  }
+  #home .slick-dots li.slick-active button:hover::before {
+    opacity: 0;
   }
 
   h2,
@@ -148,8 +303,17 @@ body {
     font-size: 1.7rem;
   }
 
+  .modal {
+    top: 13vh;
+    background-color: #DF101C;
+    width: 100%;
+    min-height: 87vh;
+    height: auto;
+  }
+
   .secciones {
     position: relative;
+    min-height: 87vh;
   }
 
   .secciones::before {
@@ -253,22 +417,28 @@ body {
     bottom: 0;
   }
   .slick-dots li {
-    margin: 7px 5px;
-    width: 15px;
-    height: 15px;
+    margin: 1vw 1vw;
+    width: 1vw;
+    height: 1vw;
+    min-width: 10px;
+    min-height: 10px;
   }
   .slick-dots li button,
   .slick-dots li button:focus {
-    border: #DF101C 2px solid;
+    border: #ffffff 2px solid;
     background-color: rgba(255, 255, 255, 0);
     border-radius: 50%;
-    width: 15px;
-    height: 15px;
+    width: 1vw;
+    height: 1vw;
+    min-width: 10px;
+    min-height: 10px;
   }
   .slick-dots li button::before {
     background-color: #ffffff;
-    width: 15px;
-    height: 15px;
+    width: 1vw;
+    height: 1vw;
+    min-width: 10px;
+    min-height: 10px;
     border-radius: 50%;
     opacity: 0;
   }
@@ -278,15 +448,15 @@ body {
     opacity: 0;
   }
   .slick-dots li.slick-active {
-    background-color: #DF101C;
+    background-color: #ffffff;
     border-radius: 50%;
   }
   .slick-dots li.slick-active button {
-    border: #DF101C 1px solid;
-    background-color: #DF101C;
+    border: #ffffff 1px solid;
+    background-color: #ffffff;
   }
   .slick-dots li.slick-active button:before {
-    color: #DF101C;
+    color: #ffffff;
     opacity: 0;
   }
   .slick-dots li.slick-active button:hover::before {
@@ -356,12 +526,86 @@ body {
     height: auto;
   }
 
+  .contacto {
+    color: #ffffff;
+    font-family: "HelveticaNeue-medium";
+    font-size: 1.8rem;
+  }
+
+  .facebook {
+    margin-left: 1vw;
+  }
+  .facebook img {
+    width: 12vw;
+    height: auto;
+    display: block;
+    margin: 0;
+  }
+
+  .hamburguer {
+    background-image: url(../images/burguer.svg);
+    background-position: center center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    width: 12vw;
+    height: 12vw;
+    position: relative;
+    margin-left: 1vw;
+  }
+
+  .active_burguer {
+    background-image: url(../images/close_burguer.svg);
+  }
+
   footer {
     background-color: #DF101C;
     font-family: "HelveticaNeue-medium";
     color: #ffffff;
     font-size: 1.5rem;
     padding: 2vh 0;
+  }
+
+  #contacto section {
+    height: 87vh;
+    overflow-y: auto;
+  }
+  #contacto section .title_contacto {
+    width: 70%;
+    margin-bottom: 5px;
+  }
+  #contacto section form input[type=date],
+  #contacto section form input[type=email],
+  #contacto section form input[type=number],
+  #contacto section form input[type=password],
+  #contacto section form input[type=text],
+  #contacto section form select,
+  #contacto section form textarea {
+    font-size: 1.2rem;
+    padding: 5px;
+    margin: 3px 0;
+  }
+  #contacto section form input[type="submit"] {
+    background-color: #F68D35;
+    color: #DF101C;
+    font-family: "HelveticaNeue-medium";
+    border: none;
+    padding: 1.3vh 7vw;
+    font-size: 1.4rem;
+    margin: 5px 0 7px;
+  }
+  #contacto section .info {
+    width: 80%;
+  }
+  #contacto section .info li {
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  #contacto section .info li strong {
+    width: 6vw;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
   }
 }
 @media all and (orientation: landscape) {
@@ -427,10 +671,23 @@ body {
   .mascota {
     width: 50%;
   }
+
+  .hamburguer {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  .facebook img {
+    width: 6vw;
+  }
 }
 @media all and (min-width: 1024px) {
   .oculta_movil {
     display: block;
+  }
+
+  .oculta_escritorio {
+    display: none;
   }
 
   .logo_presentacion img {
@@ -441,6 +698,9 @@ body {
     max-width: 9% !important;
   }
 
+  header {
+    z-index: 98;
+  }
   header section {
     width: 70%;
   }
@@ -454,6 +714,32 @@ body {
 
   h3 {
     font-size: 3rem;
+  }
+
+  nav > ul {
+    width: 50%;
+  }
+  nav > ul > li {
+    width: 21%;
+    position: relative;
+  }
+  nav > ul > li a span {
+    font-size: 2rem;
+  }
+  nav > ul > li a svg {
+    height: 30vh;
+  }
+  nav > ul > li ul {
+    position: absolute;
+    bottom: 0;
+    padding-top: 10%;
+  }
+  nav > ul > li:hover ul {
+    position: absolute;
+    bottom: -22%;
+  }
+  nav > ul > li:nth-child(2) {
+    width: 40%;
   }
 
   .secciones::before {
@@ -555,6 +841,19 @@ body {
   }
   .slider .slideimg {
     height: 45vh;
+  }
+
+  .hamburguer {
+    width: 2.3vw;
+    height: 2.3vw;
+  }
+
+  .slick-dots li {
+    margin: 0.5vw 0.09vw;
+  }
+
+  .facebook img {
+    width: 2.5vw;
   }
 
   footer {

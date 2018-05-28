@@ -7,27 +7,6 @@ function oculta_logo_presentacion(){
     }, 1000)
 }
 
-function slider_section(){
-    var alto_final      = null,
-        alto_pantalla   = null,
-        alto_header     = null;
-
-        alto_pantalla = parseInt($(window).height());
-        alto_header = parseInt($("header").height());
-        
-        alto_final = alto_pantalla - alto_header;
-        console.log(alto_final);
-        console.log(alto_header);
-        
-        $("#home").css({ 
-            "height": alto_final,
-            "padding-top": alto_header
-        });
-        $(".secciones").css({
-            "min-height": alto_final
-        });
-}
-
 function widthSlider(){
     $(".slider").find(".slideimg").each(function(){
         var imagen = $(this).data("imagen");
@@ -35,6 +14,15 @@ function widthSlider(){
             "background-image": "url("+imagen+")"
         });
     });
+    $(".slider_home").find(".slideimghome").each(function(){
+        var imagen = $(this).data("imagen");
+        $(this).css({
+            "background-image": "url("+imagen+")"
+        });
+    });
+
+    var headerH = $("header").height();
+    $(".ancla").data("ancla_bleed", headerH);
 }
 
 $(document).ready(function(){
@@ -63,12 +51,45 @@ $(document).ready(function(){
                 adaptiveHeight: true,
                 cssEase: 'linear'
             });
+            $('.slider_home').slick({
+                arrows: false,
+                dots: true,
+                infinite: true,
+                speed: 1000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                fade: true,
+                adaptiveHeight: true,
+                pauseOnHover: false,
+                cssEase: 'linear',
+                responsive: [
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            arrows: false,
+                            dots: false,
+                            infinite: true,
+                            speed: 1000,
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            autoplay: true,
+                            autoplaySpeed: 3000,
+                            fade: true,
+                            adaptiveHeight: true,
+                            pauseOnHover: false,
+                            cssEase: 'linear',
+                        }
+                    }
+                ]
+            });
         }
     });
-    slider_section();
+    
     widthSlider();
+    
     $(window).resize(function() {
-        slider_section();
         widthSlider();
     });
 
@@ -92,5 +113,37 @@ $(document).ready(function(){
 
         $("#" + idtabcontent).find("li").removeClass("active_content_tab");
         $("#" + idtab).addClass("active_content_tab");
+    });
+
+    var menu = false;
+
+    $(".hamburguer").on("click", function(event) { 
+        event.preventDefault();
+        if (menu){
+            $(this).removeClass("active_burguer");
+            $("nav").removeClass("active_nav");
+
+            $(".overflow").addClass('fadeOutoverflow');
+            $(".modal").addClass('fadeOutmodal');
+
+            setTimeout(function () {
+                $(".overflow").removeClass('fadeOutoverflow fadeInoverflow');
+                $(".modal").removeClass('fadeOutmodal fadeInmodal');
+            }, 500);
+
+            menu = false;
+        }
+        else{
+            $(this).addClass("active_burguer");
+            $("nav").addClass("active_nav");
+            menu = true;
+        }
+    });
+    $("nav").find(".ancla").on("click", function () { 
+        setTimeout(function () { 
+            $(".hamburguer").removeClass("active_burguer");
+            $("nav").removeClass("active_nav");
+            menu = false;
+        }, 500);
     });
 });

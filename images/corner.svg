@@ -41,58 +41,60 @@
 </style>
 <g>
 	<g>
-		<defs>
-			<rect id="SVGID_1_" y="-1" width="361.3" height="464.6"/>
-		</defs>
-		<clipPath id="SVGID_2_">
-			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-		</clipPath>
-		<g class="st0">
-			<polygon id="XMLID_1790_" class="st1" points="154.9,74.8 154.9,-2.6 78,-2.6 			"/>
-			<g>
-				<polygon id="XMLID_1789_" class="st2" points="78,-2.6 1,-2.6 1,74.8 				"/>
-				<polygon id="XMLID_1788_" class="st3" points="78,152.2 78,74.8 1,74.8 				"/>
-				<path id="XMLID_1787_" class="st4" d="M-75.9-2.6"/>
-				<polygon id="XMLID_1786_" class="st5" points="154.9,-2.6 154.9,-80 78,-2.6 				"/>
-				<polygon id="XMLID_1785_" class="st6" points="154.9,-80 78,-157.4 78,-80 				"/>
-				<polygon id="XMLID_1784_" class="st6" points="78,-80 1,-80 78,-2.6 				"/>
-				<polygon id="XMLID_1783_" class="st7" points="1,-2.6 1,-80 -75.9,-2.6 				"/>
-				<polygon id="XMLID_1782_" class="st8" points="78,74.8 78,-2.6 1,74.8 				"/>
-				<polygon id="XMLID_1781_" class="st9" points="1,-2.6 -75.9,-2.6 1,74.8 				"/>
-				<polygon id="XMLID_1624_" class="st10" points="385.7,-80 385.7,-157.4 308.8,-80 				"/>
-				<polygon id="XMLID_1623_" class="st11" points="154.9,-2.6 231.9,-2.6 154.9,-80 				"/>
-				<polygon id="XMLID_1622_" class="st12" points="154.9,-80 78,-80 78,-2.6 				"/>
-				<polygon id="XMLID_1621_" class="st13" points="78,-80 78,-157.4 1,-80 				"/>
-				<polygon id="XMLID_1620_" class="st14" points="78,-2.6 1,-80 1,-2.6 				"/>
-				<path id="XMLID_1619_" class="st15" d="M-75.9-2.6"/>
-				<polygon id="XMLID_1618_" class="st9" points="1,152.2 78,152.2 1,74.8 				"/>
-				<polygon id="XMLID_1617_" class="st7" points="1,74.8 -75.9,-2.6 -75.9,74.8 				"/>
-				<line id="XMLID_1616_" class="st16" x1="-75.9" y1="74.8" x2="-75.9" y2="-2.6"/>
-				<path id="XMLID_1615_" class="st17" d="M-75.9,152.2"/>
-				<line id="XMLID_1614_" class="st16" x1="-75.9" y1="152.2" x2="-75.9" y2="74.8"/>
-				<polygon id="XMLID_1613_" class="st18" points="231.9,-80 231.9,-157.4 154.9,-80 				"/>
-				<line id="XMLID_1612_" class="st16" x1="-75.9" y1="-80" x2="-75.9" y2="-157.4"/>
-				<polygon id="XMLID_1611_" class="st10" points="231.9,-80 308.8,-80 231.9,-157.4 				"/>
-				<polygon id="XMLID_508_" class="st19" points="78,-157.4 1,-157.4 1,-80 				"/>
-				<polygon id="XMLID_500_" class="st20" points="1,-80 -75.9,-157.4 -75.9,-80 				"/>
-				<polygon id="XMLID_499_" class="st21" points="154.9,-157.4 78,-157.4 154.9,-80 				"/>
-				<polygon id="XMLID_498_" class="st22" points="231.9,-157.4 154.9,-157.4 154.9,-80 				"/>
-				<polygon id="XMLID_497_" class="st23" points="231.9,-2.6 231.9,-80 154.9,-80 				"/>
-				<line id="XMLID_496_" class="st16" x1="-75.9" y1="-2.6" x2="-75.9" y2="-80"/>
-				<path id="XMLID_495_" class="st24" d="M-75.9-157.4"/>
-				<polygon id="XMLID_494_" class="st25" points="308.8,-80 308.8,-157.4 231.9,-157.4 				"/>
-				<polygon id="XMLID_493_" class="st26" points="231.9,-2.6 308.8,-80 231.9,-80 				"/>
-				<polygon id="XMLID_228_" class="st27" points="1,-157.4 -75.9,-157.4 1,-80 				"/>
-				<polygon id="XMLID_227_" class="st28" points="1,-80 -75.9,-80 -75.9,-2.6 				"/>
-				<g id="XMLID_187_">
-					<line id="XMLID_226_" class="st16" x1="-75.9" y1="229.6" x2="-75.9" y2="152.2"/>
-					<polygon id="XMLID_225_" class="st29" points="-75.9,152.2 1,152.2 -75.9,74.8 					"/>
-					<polygon id="XMLID_224_" class="st30" points="1,307 78,229.6 1,229.6 					"/>
-					<polygon id="XMLID_192_" class="st31" points="154.9,-2.6 154.9,74.8 231.9,74.8 					"/>
-					<polygon id="XMLID_191_" class="st32" points="154.9,74.8 78,74.8 154.9,152.2 					"/>
-					<path id="XMLID_190_" class="st33" d="M-75.9,384.4"/>
-					<polygon id="XMLID_189_" class="st3" points="-75.9,229.6 1,152.2 -75.9,152.2 					"/>
-					<polygon id="XMLID_188_" class="st34" points="231.9,74.8 308.8,-2.6 231.9,-2.6 					"/>
+		<g>
+			<defs>
+				<rect id="SVGID_1_" x="-1" y="-1" width="361.3" height="464.6"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<g class="st0">
+				<polygon id="XMLID_1790_" class="st1" points="153.9,74.8 153.9,-2.6 77,-2.6 				"/>
+				<g>
+					<polygon id="XMLID_1789_" class="st2" points="77,-2.6 0,-2.6 0,74.8 					"/>
+					<polygon id="XMLID_1788_" class="st3" points="77,152.2 77,74.8 0,74.8 					"/>
+					<path id="XMLID_1787_" class="st4" d="M-76.9-2.6"/>
+					<polygon id="XMLID_1786_" class="st5" points="153.9,-2.6 153.9,-80 77,-2.6 					"/>
+					<polygon id="XMLID_1785_" class="st6" points="153.9,-80 77,-157.4 77,-80 					"/>
+					<polygon id="XMLID_1784_" class="st6" points="77,-80 0,-80 77,-2.6 					"/>
+					<polygon id="XMLID_1783_" class="st7" points="0,-2.6 0,-80 -76.9,-2.6 					"/>
+					<polygon id="XMLID_1782_" class="st8" points="77,74.8 77,-2.6 0,74.8 					"/>
+					<polygon id="XMLID_1781_" class="st9" points="0,-2.6 -76.9,-2.6 0,74.8 					"/>
+					<polygon id="XMLID_1624_" class="st10" points="384.7,-80 384.7,-157.4 307.8,-80 					"/>
+					<polygon id="XMLID_1623_" class="st11" points="153.9,-2.6 230.9,-2.6 153.9,-80 					"/>
+					<polygon id="XMLID_1622_" class="st12" points="153.9,-80 77,-80 77,-2.6 					"/>
+					<polygon id="XMLID_1621_" class="st13" points="77,-80 77,-157.4 0,-80 					"/>
+					<polygon id="XMLID_1620_" class="st14" points="77,-2.6 0,-80 0,-2.6 					"/>
+					<path id="XMLID_1619_" class="st15" d="M-76.9-2.6"/>
+					<polygon id="XMLID_1618_" class="st9" points="0,152.2 77,152.2 0,74.8 					"/>
+					<polygon id="XMLID_1617_" class="st7" points="0,74.8 -76.9,-2.6 -76.9,74.8 					"/>
+					<line id="XMLID_1616_" class="st16" x1="-76.9" y1="74.8" x2="-76.9" y2="-2.6"/>
+					<path id="XMLID_1615_" class="st17" d="M-76.9,152.2"/>
+					<line id="XMLID_1614_" class="st16" x1="-76.9" y1="152.2" x2="-76.9" y2="74.8"/>
+					<polygon id="XMLID_1613_" class="st18" points="230.9,-80 230.9,-157.4 153.9,-80 					"/>
+					<line id="XMLID_1612_" class="st16" x1="-76.9" y1="-80" x2="-76.9" y2="-157.4"/>
+					<polygon id="XMLID_1611_" class="st10" points="230.9,-80 307.8,-80 230.9,-157.4 					"/>
+					<polygon id="XMLID_508_" class="st19" points="77,-157.4 0,-157.4 0,-80 					"/>
+					<polygon id="XMLID_500_" class="st20" points="0,-80 -76.9,-157.4 -76.9,-80 					"/>
+					<polygon id="XMLID_499_" class="st21" points="153.9,-157.4 77,-157.4 153.9,-80 					"/>
+					<polygon id="XMLID_498_" class="st22" points="230.9,-157.4 153.9,-157.4 153.9,-80 					"/>
+					<polygon id="XMLID_497_" class="st23" points="230.9,-2.6 230.9,-80 153.9,-80 					"/>
+					<line id="XMLID_496_" class="st16" x1="-76.9" y1="-2.6" x2="-76.9" y2="-80"/>
+					<path id="XMLID_495_" class="st24" d="M-76.9-157.4"/>
+					<polygon id="XMLID_494_" class="st25" points="307.8,-80 307.8,-157.4 230.9,-157.4 					"/>
+					<polygon id="XMLID_493_" class="st26" points="230.9,-2.6 307.8,-80 230.9,-80 					"/>
+					<polygon id="XMLID_228_" class="st27" points="0,-157.4 -76.9,-157.4 0,-80 					"/>
+					<polygon id="XMLID_227_" class="st28" points="0,-80 -76.9,-80 -76.9,-2.6 					"/>
+					<g id="XMLID_187_">
+						<line id="XMLID_226_" class="st16" x1="-76.9" y1="229.6" x2="-76.9" y2="152.2"/>
+						<polygon id="XMLID_225_" class="st29" points="-76.9,152.2 0,152.2 -76.9,74.8 						"/>
+						<polygon id="XMLID_224_" class="st30" points="0,307 77,229.6 0,229.6 						"/>
+						<polygon id="XMLID_192_" class="st31" points="153.9,-2.6 153.9,74.8 230.9,74.8 						"/>
+						<polygon id="XMLID_191_" class="st32" points="153.9,74.8 77,74.8 153.9,152.2 						"/>
+						<path id="XMLID_190_" class="st33" d="M-76.9,384.4"/>
+						<polygon id="XMLID_189_" class="st3" points="-76.9,229.6 0,152.2 -76.9,152.2 						"/>
+						<polygon id="XMLID_188_" class="st34" points="230.9,74.8 307.8,-2.6 230.9,-2.6 						"/>
+					</g>
 				</g>
 			</g>
 		</g>
