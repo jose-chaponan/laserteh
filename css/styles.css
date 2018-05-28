@@ -101,6 +101,8 @@ body {
     top: 0;
     z-index: 99998;
     height: 13vh;
+    min-height: 66px;
+    border-bottom: 2px solid #DF101C;
   }
   header section {
     width: 80%;
@@ -216,6 +218,10 @@ body {
     background-size: 100%;
     min-height: 87vh;
   }
+  #home .slider_home .mv {
+    background-position: top center;
+    background-size: 80%;
+  }
   #home .slick-dots {
     bottom: 0;
     top: 0;
@@ -281,6 +287,13 @@ body {
     color: #DF101C;
     font-size: 2rem;
     margin-top: 4vh;
+  }
+  h2 span {
+    font-size: 2rem;
+    -webkit-transform: scale(1.7);
+            transform: scale(1.7);
+    display: inline-block;
+    vertical-align: bottom;
   }
 
   h3 {
@@ -561,7 +574,7 @@ body {
     background-color: #DF101C;
     font-family: "HelveticaNeue-medium";
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 2vh 0;
   }
 
@@ -572,6 +585,10 @@ body {
   #contacto section .title_contacto {
     width: 70%;
     margin-bottom: 5px;
+  }
+  #contacto section form {
+    width: 100%;
+    margin-top: 10px;
   }
   #contacto section form input[type=date],
   #contacto section form input[type=email],
@@ -594,7 +611,7 @@ body {
     margin: 5px 0 7px;
   }
   #contacto section .info {
-    width: 80%;
+    width: 100%;
   }
   #contacto section .info li {
     color: #ffffff;
@@ -606,6 +623,204 @@ body {
     text-align: left;
     display: inline-block;
     vertical-align: top;
+  }
+  #contacto section .sociales {
+    width: 100%;
+    margin-top: 7px;
+  }
+  #contacto section .sociales p {
+    color: #ffffff;
+    font-size: 1.2rem;
+  }
+  #contacto section .sociales a {
+    margin-left: 2vw;
+    display: block;
+  }
+  #contacto section .sociales a img {
+    width: 9vw;
+    height: auto;
+    display: block;
+    margin: 0;
+  }
+}
+@media all and (min-width: 330px) {
+  #about article figure figcaption {
+    font-size: 1.4rem;
+  }
+
+  .content_tab .active_content_tab .wrapp_cont > section .triangulo li {
+    font-size: 1.4rem;
+  }
+  .content_tab .active_content_tab .wrapp_cont > section h4 {
+    font-size: 2.7rem;
+  }
+  .content_tab .active_content_tab .wrapp_cont > section h5 {
+    font-size: 1.6rem;
+  }
+
+  #contacto section form input[type=date],
+  #contacto section form input[type=email],
+  #contacto section form input[type=number],
+  #contacto section form input[type=password],
+  #contacto section form input[type=text],
+  #contacto section form select,
+  #contacto section form textarea {
+    font-size: 1.4rem;
+    padding: 7px;
+    margin: 4px 0;
+  }
+  #contacto section .info li {
+    font-size: 1.4rem;
+  }
+  #contacto section .sociales p {
+    font-size: 1.4rem;
+  }
+
+  .mascota {
+    width: 80%;
+  }
+
+  .tabs li a {
+    font-size: 1.6rem;
+  }
+
+  footer {
+    font-size: 2.15rem;
+  }
+}
+@media all and (min-width: 380px) {
+  nav ul li a span {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 2.3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  #about article figure figcaption {
+    font-size: 1.6rem;
+  }
+
+  #contacto section form input[type=date],
+  #contacto section form input[type=email],
+  #contacto section form input[type=number],
+  #contacto section form input[type=password],
+  #contacto section form input[type=text],
+  #contacto section form select,
+  #contacto section form textarea {
+    font-size: 1.6rem;
+    padding: 8px;
+    margin: 4px 0;
+  }
+  #contacto section .info li {
+    font-size: 1.5rem;
+  }
+  #contacto section .sociales p {
+    font-size: 1.6rem;
+  }
+
+  footer {
+    font-size: 2.2rem;
+  }
+}
+@media all and (min-width: 590px) {
+  nav ul li a span {
+    font-size: 2.3rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+  h2 span {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  #about article figure figcaption {
+    font-size: 2.2rem;
+  }
+
+  .content_tab .active_content_tab .wrapp_cont > section .triangulo li {
+    font-size: 2.4rem;
+  }
+  .content_tab .active_content_tab .wrapp_cont > section h4 {
+    font-size: 4rem;
+  }
+  .content_tab .active_content_tab .wrapp_cont > section h5 {
+    font-size: 2.5rem;
+  }
+
+  .tabs li a {
+    font-size: 2.2rem;
+  }
+
+  #contacto section form input[type=date],
+  #contacto section form input[type=email],
+  #contacto section form input[type=number],
+  #contacto section form input[type=password],
+  #contacto section form input[type=text],
+  #contacto section form select,
+  #contacto section form textarea {
+    font-size: 2.6rem;
+    padding: 15px;
+    margin: 6px 0;
+  }
+  #contacto section form input[type=submit] {
+    font-size: 2.6rem;
+    margin: 10px 0 15px;
+  }
+  #contacto section .info li {
+    font-size: 2.2rem;
+  }
+  #contacto section .sociales p {
+    font-size: 2.6rem;
+  }
+
+  footer {
+    font-size: 3.5rem;
+  }
+}
+@media all and (min-width: 760px) {
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  .tabs li a {
+    font-size: 2.5rem;
+  }
+
+  #about article figure {
+    margin: 2vh 0;
+  }
+  #about article figure figcaption {
+    font-size: 2.7rem;
+  }
+
+  #contacto section form input[type=date],
+  #contacto section form input[type=email],
+  #contacto section form input[type=number],
+  #contacto section form input[type=password],
+  #contacto section form input[type=text],
+  #contacto section form select,
+  #contacto section form textarea {
+    font-size: 2.2rem;
+  }
+  #contacto section .info li {
+    font-size: 2.7rem;
+  }
+  #contacto section .sociales p {
+    font-size: 2.8rem;
   }
 }
 @media all and (orientation: landscape) {
