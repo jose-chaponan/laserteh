@@ -476,6 +476,7 @@ body
         section
             height: 100vh - 13vh
             overflow-y: auto 
+            position: relative
             .title_contacto
                 width: 70%
                 margin-bottom: 5px
@@ -526,6 +527,15 @@ body
                         height: auto
                         display: block
                         margin: 0
+
+            .close_modal
+                position: absolute
+                top: 2vh
+                right: 0
+                cursor: pointer
+                img
+                    width: 10vw
+                    height: auto
 
 @media all and (min-width: 330px)
     #about 
@@ -816,7 +826,6 @@ body
             >li:nth-child(2)
                 width: 40%
 
-    
     .secciones::before
         width: 20%
         height: 70%
@@ -909,3 +918,77 @@ body
     footer
         font-size: 3.5rem
     
+    .modal
+        top: 0
+        background-color: rgba($color_rojo, 0)
+    
+    #contacto
+        section
+            width: 40%
+            background-color: $color_rojo
+            padding: 2vw 7vw
+            height: auto
+            min-height: 50vh
+            overflow-y: inherit
+            form
+                width: 50%
+                input[type=date], 
+                input[type=email], 
+                input[type=number], 
+                input[type=password], 
+                input[type=text], 
+                select, 
+                textarea
+                    font-size: 1.2rem
+                    padding: 7px
+                textarea
+                    height: 10vh
+                input[type=submit]
+                    cursor: pointer
+                    padding: 1.3vh 3vw
+                    font-size: 1.4rem
+            .title_contacto
+                width: 39%
+            .info
+                width: 52%
+                .logo_info
+                    margin-top: -5vh
+                    margin-bottom: 2vh
+                li
+                    font-size: 1.05rem
+                    letter-spacing: 1px
+                    strong
+                        width: 1.2vw
+            .sociales
+                width: 20%
+                p
+                    display: block
+                    width: 100%
+                    text-align: center
+                    font-size: 1.3rem
+                a
+                    width: 36%
+                    margin-left: 0.5vw
+                    margin-top: 2vh
+                    img
+                        width: 100%
+                a:last-child
+                    margin-left: 1vw
+            .close_modal
+                top: -2vh
+                right: -2vh
+                img
+                    width: 3vw
+            .close_modal:hover
+                transform: scale(1.2)
+
+@media all and (min-width: 1919px)
+    html
+        font-size: 105%
+
+@media all and (min-width: 2559px)
+    html
+        font-size: 145%
+    nav
+        >ul
+            width: 60%

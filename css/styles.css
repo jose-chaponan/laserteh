@@ -581,6 +581,7 @@ body {
   #contacto section {
     height: 87vh;
     overflow-y: auto;
+    position: relative;
   }
   #contacto section .title_contacto {
     width: 70%;
@@ -641,6 +642,16 @@ body {
     height: auto;
     display: block;
     margin: 0;
+  }
+  #contacto section .close_modal {
+    position: absolute;
+    top: 2vh;
+    right: 0;
+    cursor: pointer;
+  }
+  #contacto section .close_modal img {
+    width: 10vw;
+    height: auto;
   }
 }
 @media all and (min-width: 330px) {
@@ -1073,5 +1084,102 @@ body {
 
   footer {
     font-size: 3.5rem;
+  }
+
+  .modal {
+    top: 0;
+    background-color: rgba(223, 16, 28, 0);
+  }
+
+  #contacto section {
+    width: 40%;
+    background-color: #DF101C;
+    padding: 2vw 7vw;
+    height: auto;
+    min-height: 50vh;
+    overflow-y: inherit;
+  }
+  #contacto section form {
+    width: 50%;
+  }
+  #contacto section form input[type=date],
+  #contacto section form input[type=email],
+  #contacto section form input[type=number],
+  #contacto section form input[type=password],
+  #contacto section form input[type=text],
+  #contacto section form select,
+  #contacto section form textarea {
+    font-size: 1.2rem;
+    padding: 7px;
+  }
+  #contacto section form textarea {
+    height: 10vh;
+  }
+  #contacto section form input[type=submit] {
+    cursor: pointer;
+    padding: 1.3vh 3vw;
+    font-size: 1.4rem;
+  }
+  #contacto section .title_contacto {
+    width: 39%;
+  }
+  #contacto section .info {
+    width: 52%;
+  }
+  #contacto section .info .logo_info {
+    margin-top: -5vh;
+    margin-bottom: 2vh;
+  }
+  #contacto section .info li {
+    font-size: 1.05rem;
+    letter-spacing: 1px;
+  }
+  #contacto section .info li strong {
+    width: 1.2vw;
+  }
+  #contacto section .sociales {
+    width: 20%;
+  }
+  #contacto section .sociales p {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  #contacto section .sociales a {
+    width: 36%;
+    margin-left: 0.5vw;
+    margin-top: 2vh;
+  }
+  #contacto section .sociales a img {
+    width: 100%;
+  }
+  #contacto section .sociales a:last-child {
+    margin-left: 1vw;
+  }
+  #contacto section .close_modal {
+    top: -2vh;
+    right: -2vh;
+  }
+  #contacto section .close_modal img {
+    width: 3vw;
+  }
+  #contacto section .close_modal:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+@media all and (min-width: 1919px) {
+  html {
+    font-size: 105%;
+  }
+}
+@media all and (min-width: 2559px) {
+  html {
+    font-size: 145%;
+  }
+
+  nav > ul {
+    width: 60%;
   }
 }
