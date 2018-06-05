@@ -18,6 +18,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "KievitPro Bold";
+  src: url("../fonts/kievitpro-bold.eot");
+  src: local("☺"), url("../fonts/kievitpro-bold.woff") format("woff"), url("../fonts/kievitpro-bold.ttf") format("truetype"), url("../fonts/kievitpro-bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font-family: "HelveticaNeue-light";
   -webkit-font-smoothing: antialiased;
@@ -220,7 +227,7 @@ body {
   }
   #home .slider_home .mv {
     background-position: top center;
-    background-size: 80%;
+    background-size: 100%;
   }
   #home .slick-dots {
     bottom: 0;
@@ -330,7 +337,10 @@ body {
   }
 
   .secciones::before {
-    background: url(../images/corner.svg) no-repeat top left;
+    background: url(../images/corner.svg) no-repeat;
+    background-attachment: fixed;
+    background-size: 40%;
+    background-position: 0 13vh;
     top: 0;
     left: 0;
     width: 36%;
@@ -339,6 +349,8 @@ body {
 
   #about::after {
     background: url(../images/corner2.svg) no-repeat bottom right;
+    background-attachment: fixed;
+    background-size: 40%;
     bottom: 0;
     right: 0;
     width: 36%;
@@ -347,7 +359,6 @@ body {
 
   .secciones::before,
   #about::after {
-    background-size: 100%;
     content: "";
     position: absolute;
   }
@@ -428,6 +439,7 @@ body {
 
   .slick-dots {
     bottom: 0;
+    opacity: 0;
   }
   .slick-dots li {
     margin: 1vw 1vw;
@@ -514,16 +526,9 @@ body {
   .content_tab .active_content_tab .wrapp_cont > section h5 {
     font-size: 1.3rem;
   }
-  .content_tab .active_content_tab .wrapp_cont > section .triangulo {
-    margin-left: 3vw;
-  }
-  .content_tab .active_content_tab .wrapp_cont > section .triangulo li {
-    list-style-image: url("../images/triangulo.svg");
-    font-size: 1.18rem;
-  }
-  .content_tab .active_content_tab .wrapp_cont > .w_45 {
+  .content_tab .active_content_tab .wrapp_cont > .w_40 {
     position: absolute;
-    bottom: 3vh;
+    bottom: 2vh;
     left: 0;
     right: 0;
     margin: auto;
@@ -539,9 +544,17 @@ body {
     height: auto;
   }
 
+  .triangulo {
+    margin-left: 3vw;
+  }
+  .triangulo li {
+    list-style-image: url("../images/triangulo.svg");
+    font-size: 1.18rem;
+  }
+
   .contacto {
     color: #ffffff;
-    font-family: "HelveticaNeue-medium";
+    font-family: "KievitPro Bold";
     font-size: 1.8rem;
   }
 
@@ -572,7 +585,7 @@ body {
 
   footer {
     background-color: #DF101C;
-    font-family: "HelveticaNeue-medium";
+    font-family: "KievitPro Bold";
     color: #ffffff;
     font-size: 2rem;
     padding: 2vh 0;
@@ -601,6 +614,47 @@ body {
     font-size: 1.2rem;
     padding: 5px;
     margin: 3px 0;
+    font-family: "HelveticaNeue-light";
+  }
+  #contacto section form input[type=date]::-webkit-input-placeholder,
+  #contacto section form input[type=email]::-webkit-input-placeholder,
+  #contacto section form input[type=number]::-webkit-input-placeholder,
+  #contacto section form input[type=password]::-webkit-input-placeholder,
+  #contacto section form input[type=text]::-webkit-input-placeholder,
+  #contacto section form select::-webkit-input-placeholder,
+  #contacto section form textarea::-webkit-input-placeholder {
+    color: #606060;
+    font-style: normal;
+  }
+  #contacto section form input[type=date]:-moz-placeholder,
+  #contacto section form input[type=email]:-moz-placeholder,
+  #contacto section form input[type=number]:-moz-placeholder,
+  #contacto section form input[type=password]:-moz-placeholder,
+  #contacto section form input[type=text]:-moz-placeholder,
+  #contacto section form select:-moz-placeholder,
+  #contacto section form textarea:-moz-placeholder {
+    color: #606060;
+    font-style: normal;
+  }
+  #contacto section form input[type=date]::-moz-placeholder,
+  #contacto section form input[type=email]::-moz-placeholder,
+  #contacto section form input[type=number]::-moz-placeholder,
+  #contacto section form input[type=password]::-moz-placeholder,
+  #contacto section form input[type=text]::-moz-placeholder,
+  #contacto section form select::-moz-placeholder,
+  #contacto section form textarea::-moz-placeholder {
+    color: #606060;
+    font-style: normal;
+  }
+  #contacto section form input[type=date]:-ms-input-placeholder,
+  #contacto section form input[type=email]:-ms-input-placeholder,
+  #contacto section form input[type=number]:-ms-input-placeholder,
+  #contacto section form input[type=password]:-ms-input-placeholder,
+  #contacto section form input[type=text]:-ms-input-placeholder,
+  #contacto section form select:-ms-input-placeholder,
+  #contacto section form textarea:-ms-input-placeholder {
+    color: #606060;
+    font-style: normal;
   }
   #contacto section form input[type="submit"] {
     background-color: #F68D35;
@@ -735,7 +789,7 @@ body {
   }
 
   footer {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
 }
 @media all and (min-width: 590px) {
@@ -874,7 +928,7 @@ body {
   .content_tab .active_content_tab .wrapp_cont > section:first-child {
     width: 40% !important;
   }
-  .content_tab .active_content_tab .wrapp_cont > .w_45 {
+  .content_tab .active_content_tab .wrapp_cont > .w_40 {
     width: 50% !important;
     position: relative;
     bottom: 0;
@@ -971,11 +1025,17 @@ body {
   .secciones::before {
     width: 20%;
     height: 70%;
+    background-position: 0 13vh;
   }
 
   #about::after {
     width: 20%;
     height: 70%;
+  }
+
+  #about::after,
+  .secciones::before {
+    background-size: 24%;
   }
 
   #about article {
@@ -988,9 +1048,17 @@ body {
     width: 85%;
     display: block;
     margin: 2vh auto;
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
   }
   #about article figure figcaption {
     font-size: 2rem;
+  }
+  #about article figure:hover img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
   }
 
   .tabs {
@@ -1002,6 +1070,8 @@ body {
     border-bottom: 0px;
     position: relative;
     text-align: center;
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
   }
   .tabs li a {
     position: relative;
@@ -1009,9 +1079,16 @@ body {
     width: initial;
     font-size: 1.8rem;
   }
+  .tabs li:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+  }
 
   .mascota {
     width: 48%;
+    margin: 0.5vh auto 0;
   }
 
   .abajo {
@@ -1023,14 +1100,16 @@ body {
   }
 
   .content_tab {
-    width: 65%;
+    width: 75vw;
     min-height: 50vh;
+    position: relative;
   }
   .content_tab .active_content_tab {
     opacity: 1;
     position: relative;
   }
   .content_tab .active_content_tab .wrapp_cont {
+    width: 65vw;
     position: relative;
     padding-top: 0;
     z-index: 80;
@@ -1038,16 +1117,8 @@ body {
   .content_tab .active_content_tab .wrapp_cont > section:first-child {
     width: 55% !important;
   }
-  .content_tab .active_content_tab .wrapp_cont > .w_45 {
+  .content_tab .active_content_tab .wrapp_cont > .w_40 {
     width: 45% !important;
-  }
-  .content_tab .active_content_tab .wrapp_cont .close_tab_detalle {
-    position: absolute;
-    top: 2vh;
-    right: -5vw;
-  }
-  .content_tab .active_content_tab .wrapp_cont .close_tab_detalle img {
-    width: 3vw;
   }
   .content_tab .active_content_tab .wrapp_cont > section h4 {
     font-size: 3rem;
@@ -1055,15 +1126,30 @@ body {
   .content_tab .active_content_tab .wrapp_cont > section h5 {
     font-size: 1.7rem;
   }
-  .content_tab .active_content_tab .wrapp_cont > section .triangulo {
-    margin-left: 2vw;
+
+  .wrapp_cont {
+    position: relative;
   }
-  .content_tab .active_content_tab .wrapp_cont > section .triangulo li {
+
+  .close_tab_detalle {
+    position: absolute;
+    top: 2vh;
+    right: 1vw;
+  }
+  .close_tab_detalle img {
+    width: 3vw;
+  }
+
+  .triangulo {
+    margin-left: 2vw;
+    margin-right: 5vw;
+  }
+  .triangulo li {
     font-size: 1.7rem;
   }
 
   .slider {
-    width: 30vw;
+    width: 29vw;
   }
   .slider .slideimg {
     height: 45vh;
@@ -1074,8 +1160,11 @@ body {
     height: 2.3vw;
   }
 
+  .slick-dots {
+    opacity: 1;
+  }
   .slick-dots li {
-    margin: 0.5vw 0.09vw;
+    margin: 0.5vw 0.25vw;
   }
 
   .facebook img {

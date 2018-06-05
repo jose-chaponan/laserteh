@@ -84,45 +84,96 @@ $(document).ready(function(){
                     }
                 ]
             });
-            
+
             AOS.init({
                 easing: 'ease-out-back',
                 duration: 1000
             });
         }
     });
-    
+
     widthSlider();
-    
+
     $(window).resize(function() {
         widthSlider();
     });
 
-    $(".close_tab_detalle").on("click", function () { 
-        var id      = $(this).data("id"); 
+    $('.content_tab').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        infinite: false,
+        draggable: false,
+        responsive: [
+             {
+                 breakpoint: 1024,
+                 slidesToShow: 1,
+                 slidesToScroll: 1,
+                 arrows: false,
+                 infinite: false,
+                 draggable: false
+             },
+             {
+                 breakpoint: 1023,
+                 settings: 'unslick'
+             }
+         ]
+        // fade: true
+        // asNavFor: '#tab1'
+    });
+
+    $(".close_tab_detalle").on("click", function () {
+        var id      = $(this).data("id");
         var idtab   = $(this).data("idtab");
         var bodtab  = $(this).data("bodtab");
 
-        $("#"+bodtab).find("li").removeClass("active_content_tab");
-        $("#"+id).addClass("active_content_tab");
+        var ventana = $(window).width();
+
+        if (ventana < 1024) {
+            $("#"+bodtab).find("li").removeClass("active_content_tab");
+            $("#"+id).addClass("active_content_tab");
+        }
+        else{
+            $("#"+bodtab).slick('slickGoTo', 0);
+        }
         $("#"+idtab).find("a").removeClass("active_tab");
+
     });
 
-    $(".tabs").find("a").on("click", function(){
+
+    $(".tabs").find("a").on("click", function(e){
+        e.preventDefault();
         var idtabcontent = $(this).data("idtabcontent");
         var idtab = $(this).data("idtab");
         var tab = $(this).data("tab");
+        var slideno = $(this).data('slide');
+
+        var ventana = $(window).width();
 
         $("#"+tab).find("a").removeClass("active_tab");
         $(this).addClass("active_tab");
 
-        $("#" + idtabcontent).find("li").removeClass("active_content_tab");
-        $("#" + idtab).addClass("active_content_tab");
+        if (ventana < 1024) {
+            $("#" + idtabcontent).find("li").removeClass("active_content_tab");
+            $("#" + idtab).addClass("active_content_tab");
+        }
+        else{
+            $("#" + idtabcontent).slick('slickGoTo', slideno - 1);
+        }
+
+
     });
+
+    $(".tabs").find("a").click(function(e) {
+
+
+    });
+
+
 
     var menu = false;
 
-    $(".hamburguer").on("click", function(event) { 
+    $(".hamburguer").on("click", function(event) {
         event.preventDefault();
         if (menu){
             $(this).removeClass("active_burguer");
@@ -144,8 +195,8 @@ $(document).ready(function(){
             menu = true;
         }
     });
-    $("nav").find(".ancla").on("click", function () { 
-        setTimeout(function () { 
+    $("nav").find(".ancla").on("click", function () {
+        setTimeout(function () {
             $(".hamburguer").removeClass("active_burguer");
             $("nav").removeClass("active_nav");
             menu = false;
