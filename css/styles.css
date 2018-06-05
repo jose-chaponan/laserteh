@@ -586,6 +586,9 @@ body {
     font-size: 2rem;
     padding: 2vh 0;
   }
+  footer a {
+    color: #ffffff;
+  }
 
   #contacto section {
     height: 87vh;
@@ -674,6 +677,10 @@ body {
     text-align: left;
     display: inline-block;
     vertical-align: top;
+  }
+  #contacto section .info li a {
+    color: #ffffff;
+    font-size: 1.2rem;
   }
   #contacto section .sociales {
     width: 100%;
