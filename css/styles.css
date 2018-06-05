@@ -337,10 +337,7 @@ body {
   }
 
   .secciones::before {
-    background: url(../images/corner.svg) no-repeat;
-    background-attachment: fixed;
-    background-size: 40%;
-    background-position: 0 13vh;
+    background: url(../images/corner.svg) no-repeat left top;
     top: 0;
     left: 0;
     width: 36%;
@@ -349,8 +346,6 @@ body {
 
   #about::after {
     background: url(../images/corner2.svg) no-repeat bottom right;
-    background-attachment: fixed;
-    background-size: 40%;
     bottom: 0;
     right: 0;
     width: 36%;
@@ -359,6 +354,7 @@ body {
 
   .secciones::before,
   #about::after {
+    background-size: 100%;
     content: "";
     position: absolute;
   }
@@ -1020,6 +1016,17 @@ body {
   }
   nav > ul > li:nth-child(2) {
     width: 40%;
+  }
+
+  .secciones::before {
+    background-attachment: fixed;
+    background-size: 40%;
+    background-position: 0 13vh;
+  }
+
+  #about::after {
+    background-attachment: fixed;
+    background-size: 40%;
   }
 
   .secciones::before {
