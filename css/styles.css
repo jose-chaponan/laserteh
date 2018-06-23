@@ -916,7 +916,7 @@ body {
 
   .tabs {
     width: 60%;
-    margin-bottom: 2vh;
+    margin-bottom: 3.5vh;
   }
   .tabs li {
     width: 48%;
@@ -1102,7 +1102,7 @@ body {
   }
 
   .mascota {
-    width: 48%;
+    width: 42%;
     margin: 0.5vh auto 0;
   }
 
