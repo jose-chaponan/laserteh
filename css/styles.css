@@ -46,7 +46,6 @@ body {
     left: 0;
     position: fixed;
     right: 0;
-    -webkit-transition: all ease-in-out 0.5s;
     transition: all ease-in-out 0.5s;
     top: 0;
     z-index: 99999;
@@ -134,7 +133,6 @@ body {
     right: 0;
     z-index: -1;
     opacity: 0;
-    -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
   }
   nav ul {
@@ -167,7 +165,6 @@ body {
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-miterlimit: 10;
-    -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
   }
   nav ul li a .st1 {
@@ -177,13 +174,11 @@ body {
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-miterlimit: 10;
-    -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
   }
   nav ul li ul {
     position: absolute;
     bottom: 0;
-    -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
     opacity: 0;
     padding-top: 3%;
@@ -198,21 +193,18 @@ body {
   nav ul li:hover > a .st0,
   nav ul li:hover > a .st1 {
     stroke: #DF101C;
-    -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
   }
   nav ul li:hover ul {
     position: relative;
     bottom: 0;
     opacity: 1;
-    -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
   }
 
   .active_nav {
     z-index: 97;
     opacity: 1;
-    -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
   }
 
@@ -297,8 +289,7 @@ body {
   }
   h2 span {
     font-size: 2rem;
-    -webkit-transform: scale(1.7);
-            transform: scale(1.7);
+    transform: scale(1.7);
     display: inline-block;
     vertical-align: bottom;
   }
@@ -656,7 +647,7 @@ body {
     font-style: normal;
   }
   #contacto section form input[type="submit"] {
-    background-color: #F68D35;
+    background-color: #ffffff;
     color: #DF101C;
     font-family: "HelveticaNeue-medium";
     border: none;
@@ -684,7 +675,7 @@ body {
   }
   #contacto section .sociales {
     width: 100%;
-    margin-top: 7px;
+    margin-top: 25px;
   }
   #contacto section .sociales p {
     color: #ffffff;
@@ -838,7 +829,7 @@ body {
   #contacto section form textarea {
     font-size: 2.6rem;
     padding: 15px;
-    margin: 6px 0;
+    margin: 3px 0;
   }
   #contacto section form input[type=submit] {
     font-size: 2.6rem;
@@ -1063,29 +1054,25 @@ body {
     width: 85%;
     display: block;
     margin: 2vh auto;
-    -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
   }
   #about article figure figcaption {
     font-size: 2rem;
   }
   #about article figure:hover img {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    -webkit-transition: all ease-in-out 0.4s;
+    transform: scale(1.1);
     transition: all ease-in-out 0.4s;
   }
 
   .tabs {
     width: 77%;
-    margin-top: 5vh;
+    margin-top: 3.5vh;
   }
   .tabs li {
     width: initial;
     border-bottom: 0px;
     position: relative;
     text-align: center;
-    -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
   }
   .tabs li a {
@@ -1095,9 +1082,7 @@ body {
     font-size: 1.8rem;
   }
   .tabs li:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-    -webkit-transition: all ease-in-out 0.4s;
+    transform: scale(1.05);
     transition: all ease-in-out 0.4s;
   }
 
@@ -1217,7 +1202,7 @@ body {
     padding: 7px;
   }
   #contacto section form textarea {
-    height: 10vh;
+    height: 9vh;
   }
   #contacto section form input[type=submit] {
     cursor: pointer;
@@ -1242,24 +1227,23 @@ body {
     width: 1.2vw;
   }
   #contacto section .sociales {
-    width: 20%;
+    width: 36%;
   }
   #contacto section .sociales p {
     display: block;
-    width: 100%;
     text-align: center;
     font-size: 1.3rem;
   }
   #contacto section .sociales a {
-    width: 36%;
-    margin-left: 0.5vw;
-    margin-top: 2vh;
+    width: 15%;
+    margin-left: 0vw;
+    margin-top: 0;
   }
   #contacto section .sociales a img {
     width: 100%;
   }
   #contacto section .sociales a:last-child {
-    margin-left: 1vw;
+    margin-left: 0;
   }
   #contacto section .close_modal {
     top: -2vh;
@@ -1269,8 +1253,7 @@ body {
     width: 3vw;
   }
   #contacto section .close_modal:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
 @media all and (min-width: 1919px) {
