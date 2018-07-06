@@ -46,7 +46,6 @@ body {
     left: 0;
     position: fixed;
     right: 0;
-    -webkit-transition: all ease-in-out 0.5s;
     transition: all ease-in-out 0.5s;
     top: 0;
     z-index: 99999;
@@ -134,7 +133,6 @@ body {
     right: 0;
     z-index: -1;
     opacity: 0;
-    -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
   }
   nav ul {
@@ -167,7 +165,6 @@ body {
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-miterlimit: 10;
-    -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
   }
   nav ul li a .st1 {
@@ -177,13 +174,11 @@ body {
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-miterlimit: 10;
-    -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
   }
   nav ul li ul {
     position: absolute;
     bottom: 0;
-    -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
     opacity: 0;
     padding-top: 3%;
@@ -198,21 +193,18 @@ body {
   nav ul li:hover > a .st0,
   nav ul li:hover > a .st1 {
     stroke: #DF101C;
-    -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
   }
   nav ul li:hover ul {
     position: relative;
     bottom: 0;
     opacity: 1;
-    -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
   }
 
   .active_nav {
     z-index: 97;
     opacity: 1;
-    -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
   }
 
@@ -298,8 +290,7 @@ body {
   }
   h2 span {
     font-size: 2rem;
-    -webkit-transform: scale(1.7);
-            transform: scale(1.7);
+    transform: scale(1.7);
     display: inline-block;
     vertical-align: bottom;
   }
@@ -1070,16 +1061,13 @@ body {
     width: 85%;
     display: block;
     margin: 2vh auto;
-    -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
   }
   #about article figure figcaption {
     font-size: 2rem;
   }
   #about article figure:hover img {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    -webkit-transition: all ease-in-out 0.4s;
+    transform: scale(1.1);
     transition: all ease-in-out 0.4s;
   }
 
@@ -1092,7 +1080,6 @@ body {
     border-bottom: 0px;
     position: relative;
     text-align: center;
-    -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
   }
   .tabs li a {
@@ -1102,9 +1089,7 @@ body {
     font-size: 1.8rem;
   }
   .tabs li:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-    -webkit-transition: all ease-in-out 0.4s;
+    transform: scale(1.05);
     transition: all ease-in-out 0.4s;
   }
 
@@ -1251,8 +1236,6 @@ body {
   #contacto section .sociales {
     width: 36%;
     margin-top: 25px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   #contacto section .sociales p {
@@ -1280,8 +1263,7 @@ body {
     width: 3vw;
   }
   #contacto section .close_modal:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
 @media all and (min-width: 1919px) {

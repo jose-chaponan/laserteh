@@ -26,17 +26,17 @@ function widthSlider(){
 }
 
 $(document).ready(function(){
-    $("body").lsPreloader({
-        backgroundColor: "#DF101C",
-        minimumTime: 1,
-        logoImage: "images/paloma-origami.svg",
-        progressHeight: "1px",
-        progressPosition: "center",
-        progressColor: "#ffffff",
-        percentFontSize: "16px",
-        onStart: function () {
-        },
-        onComplete: function () {
+    // $("body").lsPreloader({
+    //     backgroundColor: "#DF101C",
+    //     minimumTime: 1,
+    //     logoImage: "images/paloma-origami.svg",
+    //     progressHeight: "1px",
+    //     progressPosition: "center",
+    //     progressColor: "#ffffff",
+    //     percentFontSize: "16px",
+    //     onStart: function () {
+    //     },
+    //     onComplete: function () {
             oculta_logo_presentacion();
             $('.slider').slick({
                 arrows: false,
@@ -89,8 +89,8 @@ $(document).ready(function(){
                 easing: 'ease-out-back',
                 duration: 1000
             });
-        }
-    });
+    //     }
+    // });
 
     widthSlider();
 
