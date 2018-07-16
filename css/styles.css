@@ -349,6 +349,7 @@ body {
     background-size: 100%;
     content: "";
     position: absolute;
+    z-index: -1;
   }
 
   #about article {
@@ -375,7 +376,9 @@ body {
   }
   .tabs li {
     width: 100%;
-    border-bottom: 1px solid #606060;
+    border: 1px solid #606060;
+    border-radius: 40px;
+    margin: 2px 0;
   }
   .tabs li a {
     display: block;
@@ -387,9 +390,6 @@ body {
   .tabs li .active_tab {
     font-family: "HelveticaNeue-medium";
     color: #DF101C;
-  }
-  .tabs li:last-child {
-    border-bottom: 0px;
   }
 
   .mascota {
@@ -1091,6 +1091,9 @@ body {
   .tabs li:hover {
     transform: scale(1.05);
     transition: all ease-in-out 0.4s;
+  }
+  .tabs li:last-child {
+    border-bottom: 0px;
   }
 
   .mascota {

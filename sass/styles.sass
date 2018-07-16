@@ -300,6 +300,7 @@ body
         background-size: 100%
         content: ""
         position: absolute
+        z-index: -1
 
 
     #about
@@ -322,7 +323,9 @@ body
         width: 49%
         li
             width: 100%
-            border-bottom: 1px solid $color_gris
+            border: 1px solid $color_gris
+            border-radius: 40px
+            margin: 2px 0
             a
                 display: block
                 width: 100%
@@ -332,8 +335,7 @@ body
             .active_tab
                 font-family: $fuente_media
                 color: $color_rojo
-        li:last-child
-            border-bottom: 0px
+        
 
     .mascota
         width: 63%
@@ -909,6 +911,8 @@ body
         li:hover
             transform: scale(1.05)
             transition: all ease-in-out .4s
+        li:last-child
+            border-bottom: 0px
 
     .mascota
         width: 42%
