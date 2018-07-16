@@ -415,10 +415,10 @@ body {
     margin-top: 2vh;
   }
   .slider .slideimg {
-    height: 20vh;
+    height: 32vh;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100%;
+    background-size: cover;
   }
 
   .slick-list {
