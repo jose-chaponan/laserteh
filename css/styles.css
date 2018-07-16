@@ -655,6 +655,7 @@ body {
     padding: 1.3vh 7vw;
     font-size: 1.4rem;
     margin: 5px 0 7px;
+    margin-bottom: 3.5vh;
   }
   #contacto section .info {
     width: 100%;
@@ -705,6 +706,7 @@ body {
   #contacto section .close_modal img {
     width: 10vw;
     height: auto;
+    display: none;
   }
 }
 @media all and (min-width: 330px) {
@@ -1081,6 +1083,7 @@ body {
     position: relative;
     text-align: center;
     transition: all ease-in-out 0.4s;
+    border-color: #ffffff;
   }
   .tabs li a {
     position: relative;
@@ -1091,6 +1094,9 @@ body {
   .tabs li:hover {
     transform: scale(1.05);
     transition: all ease-in-out 0.4s;
+  }
+  .tabs li:hover a {
+    color: #DF101C;
   }
   .tabs li:last-child {
     border-bottom: 0px;
@@ -1264,6 +1270,7 @@ body {
   }
   #contacto section .close_modal img {
     width: 3vw;
+    display: block;
   }
   #contacto section .close_modal:hover {
     transform: scale(1.2);

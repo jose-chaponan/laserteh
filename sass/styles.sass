@@ -335,7 +335,7 @@ body
             .active_tab
                 font-family: $fuente_media
                 color: $color_rojo
-        
+
 
     .mascota
         width: 63%
@@ -525,6 +525,7 @@ body
                     padding: 1.3vh 7vw
                     font-size: 1.4rem
                     margin: 5px 0 7px
+                    margin-bottom: 3.5vh
             .info
                 width: 100%
                 li
@@ -566,6 +567,7 @@ body
                 img
                     width: 10vw
                     height: auto
+                    display: none
 
 @media all and (min-width: 330px)
     #about
@@ -903,6 +905,7 @@ body
             position: relative
             text-align: center
             transition: all ease-in-out .4s
+            border-color: $color_blanco
             a
                 position: relative
                 display: block
@@ -911,6 +914,8 @@ body
         li:hover
             transform: scale(1.05)
             transition: all ease-in-out .4s
+            a
+                color: $color_rojo
         li:last-child
             border-bottom: 0px
 
@@ -1043,6 +1048,7 @@ body
                 right: -2vh
                 img
                     width: 3vw
+                    display: block
             .close_modal:hover
                 transform: scale(1.2)
 
