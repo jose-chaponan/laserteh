@@ -588,7 +588,7 @@ body {
     position: relative;
   }
   #contacto section .title_contacto {
-    width: 70%;
+    width: 100%;
     margin-bottom: 5px;
   }
   #contacto section form {
@@ -662,7 +662,7 @@ body {
   }
   #contacto section .info li {
     color: #ffffff;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: left;
   }
   #contacto section .info li strong {
@@ -673,7 +673,6 @@ body {
   }
   #contacto section .info li a {
     color: #ffffff;
-    font-size: 1.2rem;
   }
   #contacto section .sociales {
     width: 100%;
@@ -783,7 +782,7 @@ body {
     margin: 4px 0;
   }
   #contacto section .info li {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   #contacto section .sociales p {
     font-size: 1.6rem;
@@ -883,7 +882,7 @@ body {
     font-size: 2.2rem;
   }
   #contacto section .info li {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
   }
   #contacto section .sociales p {
     font-size: 2.8rem;
@@ -1236,7 +1235,7 @@ body {
     margin-bottom: 2vh;
   }
   #contacto section .info li {
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     letter-spacing: 1px;
   }
   #contacto section .info li strong {
@@ -1276,9 +1275,19 @@ body {
     transform: scale(1.2);
   }
 }
+@media all and (min-width: 1280px) {
+  html {
+    font-size: 57%;
+  }
+}
+@media all and (min-width: 1400px) {
+  html {
+    font-size: 64.5%;
+  }
+}
 @media all and (min-width: 1919px) {
   html {
-    font-size: 105%;
+    font-size: 93%;
   }
 }
 @media all and (min-width: 2559px) {
