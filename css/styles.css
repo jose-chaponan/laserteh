@@ -346,7 +346,7 @@ body {
 
   .secciones::before,
   #about::after {
-    background-size: 100%;
+    background-size: 85%;
     content: "";
     position: absolute;
     z-index: -1;
