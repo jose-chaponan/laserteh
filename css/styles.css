@@ -721,6 +721,12 @@ body {
   #about h2 {
     margin-top: -20%;
   }
+  #about article {
+    transform: translateY(-130%);
+  }
+  #about article figure {
+    margin: 2vh 0;
+  }
 }
 @media all and (min-width: 330px) {
   #about article figure figcaption {
