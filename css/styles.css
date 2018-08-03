@@ -708,7 +708,7 @@ body {
     display: none;
   }
 }
-@media all and (max-height: 750px) {
+@media all and (max-height: 750px) and (max-width: 755px) {
   .content_tab .active_content_tab .wrapp_cont {
     overflow-y: auto;
   }
