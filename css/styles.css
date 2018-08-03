@@ -719,7 +719,7 @@ body {
 }
 @media all and (max-width: 500px) {
   #about h2 {
-    margin-top: -30%;
+    margin-top: -20%;
   }
 }
 @media all and (min-width: 330px) {
