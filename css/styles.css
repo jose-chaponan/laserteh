@@ -718,9 +718,8 @@ body {
   }
 }
 @media all and (max-width: 500px) {
-  #about article,
   #about h2 {
-    transform: translateY(-50%);
+    margin-top: -30%;
   }
 }
 @media all and (min-width: 330px) {
