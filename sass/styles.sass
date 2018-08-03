@@ -309,7 +309,7 @@ body
 
         article
             width: 70%
-            margin-bottom: 4vh
+            
             figure
                 width: 45%
                 margin: 3vh 0
@@ -579,7 +579,13 @@ body
                 overflow-y: auto
                 >.w_40
                     position: relative
-                    margin-top: 2vh    
+                    margin-top: 2vh
+
+@media all and (max-width: 500px)
+    #about
+        article
+            transform: translateX(-50%)
+
 @media all and (min-width: 330px)
     #about
         article

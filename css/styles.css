@@ -354,7 +354,6 @@ body {
 
   #about article {
     width: 70%;
-    margin-bottom: 4vh;
   }
   #about article figure {
     width: 45%;
@@ -716,6 +715,11 @@ body {
   .content_tab .active_content_tab .wrapp_cont > .w_40 {
     position: relative;
     margin-top: 2vh;
+  }
+}
+@media all and (max-width: 500px) {
+  #about article {
+    transform: translateX(-50%);
   }
 }
 @media all and (min-width: 330px) {
