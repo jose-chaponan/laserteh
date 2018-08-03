@@ -722,7 +722,7 @@ body {
     margin-top: -20%;
   }
   #about article {
-    transform: translateY(-20%);
+    transform: translateY(-5%);
   }
   #about article figure {
     margin: 2vh 0;
