@@ -306,6 +306,7 @@ body {
     color: #DF101C;
     font-weight: 100;
     margin: 0 0 1vh;
+    transition: initial;
   }
 
   h5 {
@@ -313,6 +314,7 @@ body {
     color: #606060;
     margin: 0 0 1vh;
     font-size: 1.7rem;
+    transition: initial;
   }
 
   .modal {
