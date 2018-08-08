@@ -711,9 +711,28 @@ body {
 @media all and (max-height: 750px) and (max-width: 755px) {
   .content_tab .active_content_tab .wrapp_cont {
     overflow-y: auto;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: space-between;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 83vh;
   }
   .content_tab .active_content_tab .wrapp_cont > .w_40 {
-    position: absolute;
+    position: relative;
     margin-top: 4vh;
   }
 }
