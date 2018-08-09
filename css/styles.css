@@ -739,10 +739,11 @@ body {
     margin-bottom: 2vh;
   }
 
-  .mascota {
-    margin-top: 0;
-    margin-bottom: 2.5vh;
-    width: 60%;
+  #default1,
+  #default2 {
+    background: rgba(0, 0, 0, 0);
+    transform: translateY(-15%);
+    z-index: -1;
   }
 }
 @media all and (max-width: 500px) {
