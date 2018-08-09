@@ -738,6 +738,12 @@ body {
     margin-top: 4vh;
     margin-bottom: 2vh;
   }
+
+  .mascota {
+    margin-top: 0;
+    margin-bottom: 2.5vh;
+    width: 60%;
+  }
 }
 @media all and (max-width: 500px) {
   #about h2 {
