@@ -225,7 +225,7 @@ $(document).ready(function(){
         $("#mensaje").html("");
         interval = setInterval(function () {
             acciones();
-        }, 3000);
+        }, 1000);
        
     });
 });
