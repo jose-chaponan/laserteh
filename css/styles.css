@@ -712,14 +712,19 @@ body {
 
   #mensaje_frm .content {
     position: relative;
-    background: #ffffff;
-    padding: 20px;
+    background: #DF101C;
+    padding: 40px;
     opacity: 0;
+    margin: 10px;
   }
   #mensaje_frm .content h2 {
     font-size: 2.5rem;
     font-family: "HelveticaNeue-light";
     letter-spacing: 0.25rem;
+  }
+
+  #titulo_mensaje {
+    color: #ffffff;
   }
 }
 @media all and (max-height: 750px) and (max-width: 755px) {
