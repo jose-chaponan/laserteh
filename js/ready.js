@@ -26,6 +26,7 @@ function widthSlider(){
 }
 
 $(document).ready(function(){
+    
     // $("body").lsPreloader({
     //     backgroundColor: "#DF101C",
     //     minimumTime: 1,
@@ -219,7 +220,7 @@ $(document).ready(function(){
                 });
         }
     }
-
+    var interval = "";
     $("#formulario").on('submit', function (event) {
         event.preventDefault();
         $("#titulo_mensaje").html("Espere por favor...");
