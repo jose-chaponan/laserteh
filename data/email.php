@@ -19,9 +19,9 @@
 
     // compose message
     $message = "Hola, \n".$nombres." se ha contactado desde la web.\n\n";
-    $message .= "Mensaje:\n";
     $message .= utf8_decode("Empresa: ").$empresa."\n";
     $message .= utf8_decode("Teléfono: ").$movil."\n";
+    $message .= "Mensaje:\n";
     $message .= $contenido;
     // $message .= " Praesent ac augue sed enim aliquam auctor. Ut dignissim ultricies est.";
     // $message .= " Pellentesque convallis tempor tortor. Nullam nec purus.";
