@@ -205,8 +205,9 @@ $(document).ready(function(){
 
     function acciones(){
         var success_frm = $("#success_frm").val();
+        // alert("d");
+        console.log("Estamos listos");
         if (success_frm == "listo") {
-            console.log("Estamos listos");
             $("#content").delay(1500).animate({ "opacity": 0 }, 300,
                 function () {
                     $("#titulo_mensaje").html("GRACIAS POR CONTACTARSE");
