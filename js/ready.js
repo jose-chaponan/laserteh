@@ -203,31 +203,41 @@ $(document).ready(function(){
             menu = false;
         }, 500);
     });
-
-    function acciones(){
-        var success_frm = $("#success_frm").val();
-        // alert("d");
-        console.log("Estamos listos");
-        if (success_frm == "listo") {
-            $("#content").delay(1500).animate({ "opacity": 0 }, 300,
-                function () {
-                    $("#titulo_mensaje").html("GRACIAS POR CONTACTARSE");
-                    $("#mensaje").html('Nos pondremos en contacto con usted lo más breve');
-                    $("#content").delay(500).animate({ "opacity": 1 }, 300);
-                    setTimeout(function () {
-                        location.reload();
-                    }, 500);
-                });
-        }
-    }
     var interval = "";
+    
+    
+    var acciones = function(){
+        $(".content").animate({ "opacity": 1 }, 300, function () {
+            var success_frm = $("#success_frm").val();
+            // var boton_cerrar = '<div class="w_100 section_top_center"><a class="cerrar_modal">Cerrar</a></div>';
+            if (success_frm != "") {
+                switch (success_frm) {
+                    case "listo":
+                        $(".content").delay(1500).animate({ "opacity": 0 }, 300,
+                            function () {
+                                $("#titulo_mensaje").html("GRACIAS POR CONTACTARSE");
+                                $("#mensaje").html("Nos pondremos en contacto con usted lo más breve");
+                                $(".content").delay(500).animate({ "opacity": 1 }, 300, function () {
+                                    $("body").delay(2000).animate({ "opacity": 0 }, 300, function () {
+                                        setTimeout(function () {
+                                            location.reload();
+                                        }, 500);
+                                    });
+                                });
+                            });
+                        break;
+                }
+            };
+        });
+    }
     $("#formulario").on('submit', function (event) {
         event.preventDefault();
+        
         $("#titulo_mensaje").html("Espere por favor...");
         $("#mensaje").html("");
-        interval = setInterval(function () {
+        interval = setInterval(function() {
             acciones();
-        }, 1000);
+        }, 3000);
        
     });
 });
