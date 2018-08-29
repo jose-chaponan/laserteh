@@ -213,12 +213,12 @@ $(document).ready(function(){
             if (success_frm != "") {
                 switch (success_frm) {
                     case "listo":
-                        $("#content").delay(1500).animate({ "opacity": 0 }, 300,
+                        $("#content").delay(1000).animate({ "opacity": 0 }, 300,
                             function () {
                                 $("#titulo_mensaje").html("GRACIAS POR CONTACTARSE");
                                 $("#mensaje").html("Nos pondremos en contacto con usted lo más breve");
                                 $("#content").delay(500).animate({ "opacity": 1 }, 300, function () {
-                                    $("body").delay(3000).animate({ "opacity": 0 }, 300, function () {
+                                    $("body").delay(2000).animate({ "opacity": 0 }, 300, function () {
                                         setTimeout(function () {
                                             location.reload();
                                         }, 500);
@@ -232,11 +232,10 @@ $(document).ready(function(){
     }
     $("#frm_contacto").on("submit", function(event) {
         event.preventDefault();
-
         $("#titulo_mensaje").html("Espere por favor...");
         $("#mensaje").html("");
         var interval = setInterval(function() {
             acciones();
-        }, 4000);
+        }, 3000);
     });
 });

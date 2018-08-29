@@ -723,7 +723,8 @@ body {
     letter-spacing: 0.25rem;
   }
 
-  #titulo_mensaje {
+  #titulo_mensaje,
+  #mensaje {
     color: #ffffff;
   }
 }
