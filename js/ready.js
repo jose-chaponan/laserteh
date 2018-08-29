@@ -206,11 +206,12 @@ $(document).ready(function(){
     function acciones(){
         var success_frm = $("#success_frm").val();
         if (success_frm == "listo") {
-            $(".content").delay(1500).animate({ "opacity": 0 }, 300,
+            console.log("Estamos listos");
+            $("#content").delay(1500).animate({ "opacity": 0 }, 300,
                 function () {
                     $("#titulo_mensaje").html("GRACIAS POR CONTACTARSE");
                     $("#mensaje").html('Nos pondremos en contacto con usted lo más breve');
-                    $(".content").delay(500).animate({ "opacity": 1 }, 300);
+                    $("#content").delay(500).animate({ "opacity": 1 }, 300);
                     setTimeout(function () {
                         location.reload();
                     }, 500);
