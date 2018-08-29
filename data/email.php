@@ -29,4 +29,6 @@
 
     // send email
     mail($to, $subject, $message, $headers);
+
+    echo "listo";
 ?>
