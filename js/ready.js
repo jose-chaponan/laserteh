@@ -203,16 +203,28 @@ $(document).ready(function(){
         }, 500);
     });
 
+    function acciones(){
+        var success_frm = $("#success_frm").val();
+        if (success_frm == "listo") {
+            $(".content").delay(1500).animate({ "opacity": 0 }, 300,
+                function () {
+                    $("#titulo_mensaje").html("GRACIAS POR CONTACTARSE");
+                    $("#mensaje").html('Nos pondremos en contacto con usted lo más breve');
+                    $(".content").delay(500).animate({ "opacity": 1 }, 300);
+                    setTimeout(function () {
+                        location.reload();
+                    }, 500);
+                });
+        }
+    }
+
     $("#formulario").on('submit', function (event) {
         event.preventDefault();
-        setTimeout(function () {
-            var success_frm = $("#success_frm").val();
-            if (success_frm == "listo") {
-                $("#mensaje_frm").html('<div class="content w_60 section_top_center"><img src="images/logo.svg" alt="Larcomar" width="10%" style="min-width:150px; margin-bottom: 30px;"> <h2 class="w_100 align_center">GRACIAS POR TU MENSAJE</h2> <p class="w_100 align_center">Nos ponremos en contacto contigo lo más breve posible</p></div>').addClass('listo_mensaje');
-            }
-            setTimeout(function () {
-                $(".content").animate({ "opacity": 1 }, 300);
-            }, 300);
-        }, 500);
+        $("#titulo_mensaje").html("Espere por favor...");
+        $("#mensaje").html("");
+        interval = setInterval(function () {
+            acciones();
+        }, 3000);
+       
     });
 });
