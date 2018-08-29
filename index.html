@@ -544,10 +544,10 @@
             <img src="images/contacto_escritorio.svg" alt="Contacto Escritorio" class="oculta_movil title_contacto">
             <form id="frm_contacto" data-nombre="frm_contacto" class="section_top_justify form" data-destino="data/email.php" onsubmit="return false" accept-charset="UTF-8" method="post">
                 <img class="title_contacto oculta_escritorio" src="images/contacto_movil.svg" alt="Contacto movil">
-                <input type="text" placeholder="Nombre completo*" class="w_100 required">
-                <input type="text" placeholder="Empresa*" class="w_100 required">
-                <input type="text" placeholder="Móvil*" class="w_100 required">
-                <input type="text" placeholder="Email*" class="w_100 email required">
+                <input name="nombres"type="text" placeholder="Nombre completo*" class="w_100 required">
+                <input name="empresa" type="text" placeholder="Empresa*" class="w_100 required">
+                <input name="movil" type="text" placeholder="Móvil*" class="w_100 required">
+                <input name="email" type="text" placeholder="Email*" class="w_100 email required">
                 <textarea name="mensaje" rows="2" class="w_100 required" placeholder="Mensaje*"></textarea>
                 <div class="w_100 section_middle_right">
                     <input type="submit" value="Enviar">
