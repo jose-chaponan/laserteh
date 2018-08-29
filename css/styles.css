@@ -709,6 +709,18 @@ body {
     height: auto;
     display: none;
   }
+
+  #mensaje_frm .content {
+    position: relative;
+    background: #ffffff;
+    padding: 20px;
+    opacity: 0;
+  }
+  #mensaje_frm .content h2 {
+    font-size: 2.5rem;
+    font-family: "HelveticaNeue-light";
+    letter-spacing: 0.25rem;
+  }
 }
 @media all and (max-height: 750px) and (max-width: 755px) {
   .content_tab .active_content_tab .wrapp_cont {

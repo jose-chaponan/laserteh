@@ -8,8 +8,8 @@
     // $email = $_POST["email"];
     // $mensaje = $_POST[""];
 
-    // $to = "ventas@grupoelide.pe";
-    $to = "ivan@navike21.com";
+    $to = "sac@cadillo.pe";
+    // $to = "ivan@navike21.com";
     $subject = "Nuevo contacto desde la web";
 
     // compose headers
